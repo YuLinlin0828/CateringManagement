@@ -103,7 +103,7 @@ namespace cygl.UI
                     SqlConnection conn = cygl.Helper.DBHelper.getconn();
                     conn.Open();
 
-                    SqlCommand cmd = new SqlCommand(" insert zhangdan select guestfood.id,guestfood.roomname,foodname, foodnum,foodallprice,room.id , guestfood.waitername from room ,guestfood where room.roomname=guestfood.roomname", conn);
+                    SqlCommand cmd = new SqlCommand(" insert bill select guestfood.id,guestfood.roomname,foodname, foodnum,foodallprice,room.id , guestfood.waitername from room ,guestfood where room.roomname=guestfood.roomname", conn);
                     cmd.ExecuteNonQuery();
                     cmd = new SqlCommand("delete from guestfood where roomname='" + Rname + "'", conn);
                     cmd.ExecuteNonQuery();

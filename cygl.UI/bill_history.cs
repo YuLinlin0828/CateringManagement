@@ -21,7 +21,7 @@ namespace cygl.UI
 
             SqlConnection conn = cygl.Helper.DBHelper.getconn();
             conn.Open();
-            SqlDataAdapter da = new SqlDataAdapter("select roomname,datatime,price,waitername from zhangdan  ", conn);
+            SqlDataAdapter da = new SqlDataAdapter("select roomname,datatime,price,waitername from bill  ", conn);
             DataSet ds = new DataSet();
             da.Fill(ds);
             dataGridView1.DataSource = ds.Tables[0];
