@@ -168,7 +168,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::cygl.UI.Properties.Resources.主界面;
+            this.BackgroundImage = global::cygl.UI.Properties.Resources.蔬菜;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(530, 295);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label13);

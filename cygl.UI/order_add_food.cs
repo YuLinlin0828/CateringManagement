@@ -87,7 +87,7 @@ namespace cygl.UI
             }
             cbWaiter.SelectedIndex = 0;
             sdr.Close();
-            cmd = new SqlCommand("select roomzt from room where roomname='" + RName + "'", conn);
+            cmd = new SqlCommand("select roomstate from room where roomname='" + RName + "'", conn);
             string zt = Convert.ToString(cmd.ExecuteScalar());
             if (zt.Trim() == "´ýÓÃ")
             {

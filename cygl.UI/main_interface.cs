@@ -19,40 +19,42 @@ namespace cygl.UI
         public string Times;
         public string Names;
         Model.user us = new cygl.Model.user();
-        private void 桌台信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        //桌台信息
+        private void table_infoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             table_info fm = new table_info();
             fm.Show();
         }
-
-        private void 职员信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        //职员信息
+        private void staff_infoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             staff_info fm = new staff_info();
             fm.Show();
         }
-        private void 菜品信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        //菜品信息
+        private void food_infoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             food_info fm = new food_info();
             fm.Show();
         }
-
-        private void 注册管理员ToolStripMenuItem_Click(object sender, EventArgs e)
+        //注册管理员
+        private void admin_register_Click(object sender, EventArgs e)
         {
             system_maintenance fm = new system_maintenance();
             fm.bt = "注册";
             fm.la = "注册";
             fm.Show();
         }
-
-        private void 修改管理员ToolStripMenuItem_Click(object sender, EventArgs e)
+        //修改管理员
+        private void admin_change_Click(object sender, EventArgs e)
         {
             system_maintenance fm = new system_maintenance();
             fm.bt = "修改";
             fm.la = "修改";
             fm.Show();
         }
-
-        private void 注销管理员ToolStripMenuItem_Click(object sender, EventArgs e)
+        //注销管理员
+        private void admin_cancel_Click(object sender, EventArgs e)
         {
             system_maintenance fm = new system_maintenance();
             fm.bt = "注销";
@@ -60,7 +62,7 @@ namespace cygl.UI
             fm.Show();
         }
 
-        private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void exit_tool_Click(object sender, EventArgs e)
         {
 
             if (MessageBox.Show("确定退出本系统吗？", "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == DialogResult.OK)
@@ -89,13 +91,13 @@ namespace cygl.UI
             sdr = cmd.ExecuteReader();
             while (sdr.Read())
             {
-                string zt = sdr["roomzt"].ToString().Trim();
+                string zt = sdr["roomstate"].ToString().Trim();
                 AddItems(zt);
             }
             conn.Close();
         }
 
-        private void 开台ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void open_table_Click(object sender, EventArgs e)
         {
             if (lvDesk.SelectedItems.Count != 0)
             {
@@ -111,7 +113,7 @@ namespace cygl.UI
             }
         }
 
-        private void 取消开台ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void cancel_table_Click(object sender, EventArgs e)
         {
             if (lvDesk.SelectedItems.Count != 0)
             {
@@ -127,7 +129,7 @@ namespace cygl.UI
                 }
                 else
                 {
-                    cmd = new SqlCommand("update room set roomzt='待用' where roomname='" + names + "'", conn);
+                    cmd = new SqlCommand("update room set roomstate='待用' where roomname='" + names + "'", conn);
                     cmd.ExecuteNonQuery();
                     cmd = new SqlCommand("delete from guestfood where roomname='" + names + "'", conn);
                     cmd.ExecuteNonQuery();
@@ -142,7 +144,7 @@ namespace cygl.UI
             }
         }
 
-        private void 点加菜ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void add_food_Click(object sender, EventArgs e)
         {
             if (lvDesk.SelectedItems.Count != 0)
             {
@@ -165,28 +167,28 @@ namespace cygl.UI
             SqlCommand cmd = new SqlCommand("select * from room where roomname='" + names + "'", conn);
             SqlDataReader sdr = cmd.ExecuteReader();
             sdr.Read();
-            string zt = sdr["roomzt"].ToString().Trim();
+            string zt = sdr["roomstate"].ToString().Trim();
             sdr.Close();
             if (zt == "使用")
             {
-                this.yjcd.Items[0].Enabled = false;
-                this.yjcd.Items[1].Enabled = true;
-                this.yjcd.Items[3].Enabled = true;
-                this.yjcd.Items[5].Enabled = true;
-                this.yjcd.Items[6].Enabled = true;
+                this.rightclick_menu.Items[0].Enabled = false;
+                this.rightclick_menu.Items[1].Enabled = true;
+                this.rightclick_menu.Items[3].Enabled = true;
+                this.rightclick_menu.Items[5].Enabled = true;
+                this.rightclick_menu.Items[6].Enabled = true;
             }
             if (zt == "待用")
             {
-                this.yjcd.Items[0].Enabled = true;
-                this.yjcd.Items[1].Enabled = false;
-                this.yjcd.Items[3].Enabled = false;
-                this.yjcd.Items[5].Enabled = false;
-                this.yjcd.Items[6].Enabled = false;
+                this.rightclick_menu.Items[0].Enabled = true;
+                this.rightclick_menu.Items[1].Enabled = false;
+                this.rightclick_menu.Items[3].Enabled = false;
+                this.rightclick_menu.Items[5].Enabled = false;
+                this.rightclick_menu.Items[6].Enabled = false;
             }
             conn.Close();
         }
 
-        private void 结账ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void pay_bill_Click(object sender, EventArgs e)
         {
             if (lvDesk.SelectedItems.Count != 0)
             {
@@ -201,7 +203,7 @@ namespace cygl.UI
             }
         }
 
-        private void 消费查询ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void check_bill_Click(object sender, EventArgs e)
         {
             if (lvDesk.SelectedItems.Count != 0)
             {
@@ -216,7 +218,7 @@ namespace cygl.UI
             }
         }
 
-        private void 历史账单ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void bill_record_Click(object sender, EventArgs e)
         {
             bill_history fm = new bill_history();
             fm.Show();
@@ -227,13 +229,13 @@ namespace cygl.UI
             this.Show();
         }
 
-        private void 打开ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void open_tool_Click(object sender, EventArgs e)
         {
             this.Show();
 
         }
 
-        private void 退出ToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void exit_tool1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -253,24 +255,24 @@ namespace cygl.UI
             this.Hide();
         }
 
-        private void 关于ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void about_info_Click(object sender, EventArgs e)
         {
             designer_info fm = new designer_info();
             fm.Show();
         }
 
-        private void 日历ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void calendar_tool_Click(object sender, EventArgs e)
         {
             calender fm = new calender();
             fm.Show();
         }
 
-        private void 计算器ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void calculator_tool_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("calc.exe");
         }
 
-        private void 记事本ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void notepad_tool_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("notepad.exe");
         }
@@ -280,12 +282,17 @@ namespace cygl.UI
 
         }
 
-        private void zcd_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void main_menu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }
 
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void lvDesk_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

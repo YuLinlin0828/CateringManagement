@@ -14,7 +14,7 @@ namespace cygl.DAL
         //插入房间信息
         public void insert(Model.room my)
         {
-            string sql = "insert into room(id,roomname,roomabb,roomfee,roomwz)values(@id,@roomname,@roomabb,@roomfee,@roomlocation)";
+            string sql = "insert into room(id,roomname,roomabb,roomfee,roomlocation)values(@id,@roomname,@roomabb,@roomfee,@roomlocation)";
             List<SqlParameter> sqlParams = new List<SqlParameter>();
             sqlParams.Add(new SqlParameter("@id", my.Id));
             sqlParams.Add(new SqlParameter("@roomname", my.Roomname));
@@ -47,7 +47,7 @@ namespace cygl.DAL
         //显示房间列表
         public DataTable getlist(string strWhere)
         {
-            string sql = "select id,roomname,roomjc,roombjf,roomwz from Room";
+            string sql = "select id,roomname,roomabb,roomfee,roomlocation from Room";
             if (strWhere != "")
             {
                 sql += "where" + strWhere;

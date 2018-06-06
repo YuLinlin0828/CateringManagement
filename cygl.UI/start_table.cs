@@ -58,7 +58,7 @@ namespace cygl.UI
             else
             {
                 string roomname = cbNum.SelectedItem.ToString();
-                SqlCommand cmd1 = new SqlCommand("update room set roomzt='使用' where roomname='" + name + "'", conn);
+                SqlCommand cmd1 = new SqlCommand("update room set roomstate='使用' where roomname='" + name + "'", conn);
                 cmd1.ExecuteNonQuery();
                 this.Close();
             }

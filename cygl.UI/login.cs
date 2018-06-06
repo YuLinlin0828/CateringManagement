@@ -36,7 +36,7 @@ namespace cygl.UI
         }
         cygl.BLL.user um = new cygl.BLL.user();
 
-        private void label2_Click(object sender, EventArgs e)
+        private void btnlogin_Click(object sender, EventArgs e)
         {
             try
             {
@@ -62,7 +62,7 @@ namespace cygl.UI
             }
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void btnquit_Click(object sender, EventArgs e)
         {
             this.Close();
         }

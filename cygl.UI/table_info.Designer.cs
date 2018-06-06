@@ -167,21 +167,21 @@
             // 
             // Column2
             // 
-            this.Column2.DataPropertyName = "roomjc";
+            this.Column2.DataPropertyName = "roomabb";
             this.Column2.HeaderText = "桌台简称";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
-            this.Column3.DataPropertyName = "roombjf";
+            this.Column3.DataPropertyName = "roomfee";
             this.Column3.HeaderText = "包间费";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
-            this.Column4.DataPropertyName = "roomwz";
+            this.Column4.DataPropertyName = "roomlocation";
             this.Column4.HeaderText = "桌台位置";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;

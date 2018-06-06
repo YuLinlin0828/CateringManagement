@@ -22,7 +22,7 @@
 
         #region Windows 窗体设计器生成的代码
 
-        /// <summary>
+        /// <summary>calendar_tool
         /// 设计器支持所需的方法 - 不要
         /// 使用代码编辑器修改此方法的内容。
         /// </summary>
@@ -30,158 +30,158 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main_interface));
-            this.zcd = new System.Windows.Forms.MenuStrip();
-            this.桌台信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.职员信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.菜品信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.main_menu = new System.Windows.Forms.MenuStrip();
+            this.table_infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.staff_infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.food_infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.日历ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.计算器ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.记事本ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.系统ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.注册管理员ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.修改管理员ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.注销管理员ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.历史账单ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calendar_tool = new System.Windows.Forms.ToolStripMenuItem();
+            this.calculator_tool = new System.Windows.Forms.ToolStripMenuItem();
+            this.notepad_tool = new System.Windows.Forms.ToolStripMenuItem();
+            this.totalsystem_tool = new System.Windows.Forms.ToolStripMenuItem();
+            this.admin_register = new System.Windows.Forms.ToolStripMenuItem();
+            this.admin_change = new System.Windows.Forms.ToolStripMenuItem();
+            this.admin_cancel = new System.Windows.Forms.ToolStripMenuItem();
+            this.bill_record = new System.Windows.Forms.ToolStripMenuItem();
+            this.about_info = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.yjcd = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.开台ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.取消开台ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exit_tool = new System.Windows.Forms.ToolStripMenuItem();
+            this.rightclick_menu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.open_table = new System.Windows.Forms.ToolStripMenuItem();
+            this.cancel_table = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.点加菜ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.add_food = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.消费查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.结账ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.check_bill = new System.Windows.Forms.ToolStripMenuItem();
+            this.pay_bill = new System.Windows.Forms.ToolStripMenuItem();
             this.lvDesk = new System.Windows.Forms.ListView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.打开ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.退出ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.zcd.SuspendLayout();
-            this.yjcd.SuspendLayout();
+            this.open_tool = new System.Windows.Forms.ToolStripMenuItem();
+            this.exit_tool1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.main_menu.SuspendLayout();
+            this.rightclick_menu.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // zcd
+            // main_menu
             // 
-            this.zcd.BackColor = System.Drawing.Color.Transparent;
-            this.zcd.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.zcd.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.桌台信息ToolStripMenuItem,
-            this.职员信息ToolStripMenuItem,
-            this.菜品信息ToolStripMenuItem,
+            this.main_menu.BackColor = System.Drawing.Color.Linen;
+            this.main_menu.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.main_menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.table_infoToolStripMenuItem,
+            this.staff_infoToolStripMenuItem,
+            this.food_infoToolStripMenuItem,
             this.toolStripMenuItem2,
-            this.系统ToolStripMenuItem,
-            this.历史账单ToolStripMenuItem,
-            this.关于ToolStripMenuItem,
+            this.totalsystem_tool,
+            this.bill_record,
+            this.about_info,
             this.toolStripMenuItem1,
-            this.退出ToolStripMenuItem});
-            this.zcd.Location = new System.Drawing.Point(0, 0);
-            this.zcd.Name = "zcd";
-            this.zcd.Size = new System.Drawing.Size(886, 27);
-            this.zcd.TabIndex = 0;
-            this.zcd.Text = "menuStrip1";
-            this.zcd.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.zcd_ItemClicked);
+            this.exit_tool});
+            this.main_menu.Location = new System.Drawing.Point(0, 0);
+            this.main_menu.Name = "main_menu";
+            this.main_menu.Size = new System.Drawing.Size(886, 27);
+            this.main_menu.TabIndex = 0;
+            this.main_menu.Text = "menuStrip1";
+            this.main_menu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.main_menu_ItemClicked);
             // 
-            // 桌台信息ToolStripMenuItem
+            // table_infoToolStripMenuItem
             // 
-            this.桌台信息ToolStripMenuItem.Name = "桌台信息ToolStripMenuItem";
-            this.桌台信息ToolStripMenuItem.Size = new System.Drawing.Size(105, 23);
-            this.桌台信息ToolStripMenuItem.Text = "桌台信息";
-            this.桌台信息ToolStripMenuItem.Click += new System.EventHandler(this.桌台信息ToolStripMenuItem_Click);
+            this.table_infoToolStripMenuItem.Name = "table_infoToolStripMenuItem";
+            this.table_infoToolStripMenuItem.Size = new System.Drawing.Size(105, 23);
+            this.table_infoToolStripMenuItem.Text = "桌台信息";
+            this.table_infoToolStripMenuItem.Click += new System.EventHandler(this.table_infoToolStripMenuItem_Click);
             // 
-            // 职员信息ToolStripMenuItem
+            // staff_infoToolStripMenuItem
             // 
-            this.职员信息ToolStripMenuItem.Name = "职员信息ToolStripMenuItem";
-            this.职员信息ToolStripMenuItem.Size = new System.Drawing.Size(105, 23);
-            this.职员信息ToolStripMenuItem.Text = "职员信息";
-            this.职员信息ToolStripMenuItem.Click += new System.EventHandler(this.职员信息ToolStripMenuItem_Click);
+            this.staff_infoToolStripMenuItem.Name = "staff_infoToolStripMenuItem";
+            this.staff_infoToolStripMenuItem.Size = new System.Drawing.Size(105, 23);
+            this.staff_infoToolStripMenuItem.Text = "职员信息";
+            this.staff_infoToolStripMenuItem.Click += new System.EventHandler(this.staff_infoToolStripMenuItem_Click);
             // 
-            // 菜品信息ToolStripMenuItem
+            // food_infoToolStripMenuItem
             // 
-            this.菜品信息ToolStripMenuItem.Name = "菜品信息ToolStripMenuItem";
-            this.菜品信息ToolStripMenuItem.Size = new System.Drawing.Size(105, 23);
-            this.菜品信息ToolStripMenuItem.Text = "菜品信息";
-            this.菜品信息ToolStripMenuItem.Click += new System.EventHandler(this.菜品信息ToolStripMenuItem_Click);
+            this.food_infoToolStripMenuItem.Name = "food_infoToolStripMenuItem";
+            this.food_infoToolStripMenuItem.Size = new System.Drawing.Size(105, 23);
+            this.food_infoToolStripMenuItem.Text = "菜品信息";
+            this.food_infoToolStripMenuItem.Click += new System.EventHandler(this.food_infoToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.日历ToolStripMenuItem,
-            this.计算器ToolStripMenuItem,
-            this.记事本ToolStripMenuItem});
+            this.calendar_tool,
+            this.calculator_tool,
+            this.notepad_tool});
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(105, 23);
             this.toolStripMenuItem2.Text = "辅助工具";
             // 
-            // 日历ToolStripMenuItem
+            // calendar_tool
             // 
-            this.日历ToolStripMenuItem.Name = "日历ToolStripMenuItem";
-            this.日历ToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
-            this.日历ToolStripMenuItem.Text = "日历";
-            this.日历ToolStripMenuItem.Click += new System.EventHandler(this.日历ToolStripMenuItem_Click);
+            this.calendar_tool.Name = "calendar_tool";
+            this.calendar_tool.Size = new System.Drawing.Size(141, 24);
+            this.calendar_tool.Text = "日历";
+            this.calendar_tool.Click += new System.EventHandler(this.calendar_tool_Click);
             // 
-            // 计算器ToolStripMenuItem
+            // calculator_tool
             // 
-            this.计算器ToolStripMenuItem.Name = "计算器ToolStripMenuItem";
-            this.计算器ToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
-            this.计算器ToolStripMenuItem.Text = "计算器";
-            this.计算器ToolStripMenuItem.Click += new System.EventHandler(this.计算器ToolStripMenuItem_Click);
+            this.calculator_tool.Name = "calculator_tool";
+            this.calculator_tool.Size = new System.Drawing.Size(141, 24);
+            this.calculator_tool.Text = "计算器";
+            this.calculator_tool.Click += new System.EventHandler(this.calculator_tool_Click);
             // 
-            // 记事本ToolStripMenuItem
+            // notepad_tool
             // 
-            this.记事本ToolStripMenuItem.Name = "记事本ToolStripMenuItem";
-            this.记事本ToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
-            this.记事本ToolStripMenuItem.Text = "记事本";
-            this.记事本ToolStripMenuItem.Click += new System.EventHandler(this.记事本ToolStripMenuItem_Click);
+            this.notepad_tool.Name = "notepad_tool";
+            this.notepad_tool.Size = new System.Drawing.Size(141, 24);
+            this.notepad_tool.Text = "记事本";
+            this.notepad_tool.Click += new System.EventHandler(this.notepad_tool_Click);
             // 
-            // 系统ToolStripMenuItem
+            // totalsystem_tool
             // 
-            this.系统ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.注册管理员ToolStripMenuItem,
-            this.修改管理员ToolStripMenuItem,
-            this.注销管理员ToolStripMenuItem});
-            this.系统ToolStripMenuItem.Name = "系统ToolStripMenuItem";
-            this.系统ToolStripMenuItem.Size = new System.Drawing.Size(105, 23);
-            this.系统ToolStripMenuItem.Text = "系统维护";
+            this.totalsystem_tool.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.admin_register,
+            this.admin_change,
+            this.admin_cancel});
+            this.totalsystem_tool.Name = "totalsystem_tool";
+            this.totalsystem_tool.Size = new System.Drawing.Size(105, 23);
+            this.totalsystem_tool.Text = "系统维护";
             // 
-            // 注册管理员ToolStripMenuItem
+            // admin_register
             // 
-            this.注册管理员ToolStripMenuItem.Name = "注册管理员ToolStripMenuItem";
-            this.注册管理员ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
-            this.注册管理员ToolStripMenuItem.Text = "注册管理员";
-            this.注册管理员ToolStripMenuItem.Click += new System.EventHandler(this.注册管理员ToolStripMenuItem_Click);
+            this.admin_register.Name = "admin_register";
+            this.admin_register.Size = new System.Drawing.Size(183, 24);
+            this.admin_register.Text = "注册管理员";
+            this.admin_register.Click += new System.EventHandler(this.admin_register_Click);
             // 
-            // 修改管理员ToolStripMenuItem
+            // admin_change
             // 
-            this.修改管理员ToolStripMenuItem.Name = "修改管理员ToolStripMenuItem";
-            this.修改管理员ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
-            this.修改管理员ToolStripMenuItem.Text = "修改管理员";
-            this.修改管理员ToolStripMenuItem.Click += new System.EventHandler(this.修改管理员ToolStripMenuItem_Click);
+            this.admin_change.Name = "admin_change";
+            this.admin_change.Size = new System.Drawing.Size(183, 24);
+            this.admin_change.Text = "修改管理员";
+            this.admin_change.Click += new System.EventHandler(this.admin_change_Click);
             // 
-            // 注销管理员ToolStripMenuItem
+            // admin_cancel
             // 
-            this.注销管理员ToolStripMenuItem.Name = "注销管理员ToolStripMenuItem";
-            this.注销管理员ToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
-            this.注销管理员ToolStripMenuItem.Text = "注销管理员";
-            this.注销管理员ToolStripMenuItem.Click += new System.EventHandler(this.注销管理员ToolStripMenuItem_Click);
+            this.admin_cancel.Name = "admin_cancel";
+            this.admin_cancel.Size = new System.Drawing.Size(183, 24);
+            this.admin_cancel.Text = "注销管理员";
+            this.admin_cancel.Click += new System.EventHandler(this.admin_cancel_Click);
             // 
-            // 历史账单ToolStripMenuItem
+            // bill_record
             // 
-            this.历史账单ToolStripMenuItem.Name = "历史账单ToolStripMenuItem";
-            this.历史账单ToolStripMenuItem.Size = new System.Drawing.Size(105, 23);
-            this.历史账单ToolStripMenuItem.Text = "历史账单";
-            this.历史账单ToolStripMenuItem.Click += new System.EventHandler(this.历史账单ToolStripMenuItem_Click);
+            this.bill_record.Name = "bill_record";
+            this.bill_record.Size = new System.Drawing.Size(105, 23);
+            this.bill_record.Text = "历史账单";
+            this.bill_record.Click += new System.EventHandler(this.bill_record_Click);
             // 
-            // 关于ToolStripMenuItem
+            // about_info
             // 
-            this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(63, 23);
-            this.关于ToolStripMenuItem.Text = "关于";
-            this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click);
+            this.about_info.Name = "about_info";
+            this.about_info.Size = new System.Drawing.Size(63, 23);
+            this.about_info.Text = "关于";
+            this.about_info.Click += new System.EventHandler(this.about_info_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -190,76 +190,76 @@
             this.toolStripMenuItem1.Text = "最小化";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
-            // 退出ToolStripMenuItem
+            // exit_tool
             // 
-            this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(63, 23);
-            this.退出ToolStripMenuItem.Text = "退出";
-            this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
+            this.exit_tool.Name = "exit_tool";
+            this.exit_tool.Size = new System.Drawing.Size(63, 23);
+            this.exit_tool.Text = "退出";
+            this.exit_tool.Click += new System.EventHandler(this.exit_tool_Click);
             // 
-            // yjcd
+            // rightclick_menu
             // 
-            this.yjcd.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.开台ToolStripMenuItem,
-            this.取消开台ToolStripMenuItem,
+            this.rightclick_menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.open_table,
+            this.cancel_table,
             this.toolStripSeparator3,
-            this.点加菜ToolStripMenuItem,
+            this.add_food,
             this.toolStripSeparator1,
-            this.消费查询ToolStripMenuItem,
-            this.结账ToolStripMenuItem});
-            this.yjcd.Name = "yjcd";
-            this.yjcd.Size = new System.Drawing.Size(125, 126);
+            this.check_bill,
+            this.pay_bill});
+            this.rightclick_menu.Name = "rightclick_menu";
+            this.rightclick_menu.Size = new System.Drawing.Size(125, 126);
             // 
-            // 开台ToolStripMenuItem
+            // open_table
             // 
-            this.开台ToolStripMenuItem.Name = "开台ToolStripMenuItem";
-            this.开台ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.开台ToolStripMenuItem.Text = "开台";
-            this.开台ToolStripMenuItem.Click += new System.EventHandler(this.开台ToolStripMenuItem_Click);
+            this.open_table.Name = "open_table";
+            this.open_table.Size = new System.Drawing.Size(124, 22);
+            this.open_table.Text = "开台";
+            this.open_table.Click += new System.EventHandler(this.open_table_Click);
             // 
-            // 取消开台ToolStripMenuItem
+            // cancel_table
             // 
-            this.取消开台ToolStripMenuItem.Name = "取消开台ToolStripMenuItem";
-            this.取消开台ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.取消开台ToolStripMenuItem.Text = "取消开台";
-            this.取消开台ToolStripMenuItem.Click += new System.EventHandler(this.取消开台ToolStripMenuItem_Click);
+            this.cancel_table.Name = "cancel_table";
+            this.cancel_table.Size = new System.Drawing.Size(124, 22);
+            this.cancel_table.Text = "取消开台";
+            this.cancel_table.Click += new System.EventHandler(this.cancel_table_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(121, 6);
             // 
-            // 点加菜ToolStripMenuItem
+            // add_food
             // 
-            this.点加菜ToolStripMenuItem.Name = "点加菜ToolStripMenuItem";
-            this.点加菜ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.点加菜ToolStripMenuItem.Text = "点\\加菜";
-            this.点加菜ToolStripMenuItem.Click += new System.EventHandler(this.点加菜ToolStripMenuItem_Click);
+            this.add_food.Name = "add_food";
+            this.add_food.Size = new System.Drawing.Size(124, 22);
+            this.add_food.Text = "点\\加菜";
+            this.add_food.Click += new System.EventHandler(this.add_food_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(121, 6);
             // 
-            // 消费查询ToolStripMenuItem
+            // check_bill
             // 
-            this.消费查询ToolStripMenuItem.Name = "消费查询ToolStripMenuItem";
-            this.消费查询ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.消费查询ToolStripMenuItem.Text = "消费查询";
-            this.消费查询ToolStripMenuItem.Click += new System.EventHandler(this.消费查询ToolStripMenuItem_Click);
+            this.check_bill.Name = "check_bill";
+            this.check_bill.Size = new System.Drawing.Size(124, 22);
+            this.check_bill.Text = "消费查询";
+            this.check_bill.Click += new System.EventHandler(this.check_bill_Click);
             // 
-            // 结账ToolStripMenuItem
+            // pay_bill
             // 
-            this.结账ToolStripMenuItem.Name = "结账ToolStripMenuItem";
-            this.结账ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.结账ToolStripMenuItem.Text = "结账";
-            this.结账ToolStripMenuItem.Click += new System.EventHandler(this.结账ToolStripMenuItem_Click);
+            this.pay_bill.Name = "pay_bill";
+            this.pay_bill.Size = new System.Drawing.Size(124, 22);
+            this.pay_bill.Text = "结账";
+            this.pay_bill.Click += new System.EventHandler(this.pay_bill_Click);
             // 
             // lvDesk
             // 
-            this.lvDesk.BackgroundImage = global::cygl.UI.Properties.Resources.背景;
+            this.lvDesk.BackgroundImage = global::cygl.UI.Properties.Resources.餐具背景;
             this.lvDesk.BackgroundImageTiled = true;
-            this.lvDesk.ContextMenuStrip = this.yjcd;
+            this.lvDesk.ContextMenuStrip = this.rightclick_menu;
             this.lvDesk.Cursor = System.Windows.Forms.Cursors.Default;
             this.lvDesk.Font = new System.Drawing.Font("楷体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lvDesk.HideSelection = false;
@@ -270,14 +270,15 @@
             this.lvDesk.Size = new System.Drawing.Size(886, 453);
             this.lvDesk.TabIndex = 5;
             this.lvDesk.UseCompatibleStateImageBehavior = false;
+            this.lvDesk.SelectedIndexChanged += new System.EventHandler(this.lvDesk_SelectedIndexChanged);
             this.lvDesk.Click += new System.EventHandler(this.lvDesk_Click);
             // 
             // imageList1
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "a_1.gif");
-            this.imageList1.Images.SetKeyName(1, "a_2.gif");
+            this.imageList1.Images.SetKeyName(0, "空桌.jpg");
+            this.imageList1.Images.SetKeyName(1, "餐馆进餐.jpg");
             // 
             // notifyIcon1
             // 
@@ -290,38 +291,39 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.打开ToolStripMenuItem,
-            this.退出ToolStripMenuItem1});
+            this.open_tool,
+            this.exit_tool1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 48);
             this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
-            // 打开ToolStripMenuItem
+            // open_tool
             // 
-            this.打开ToolStripMenuItem.Name = "打开ToolStripMenuItem";
-            this.打开ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.打开ToolStripMenuItem.Text = "打开";
-            this.打开ToolStripMenuItem.Click += new System.EventHandler(this.打开ToolStripMenuItem_Click);
+            this.open_tool.Name = "open_tool";
+            this.open_tool.Size = new System.Drawing.Size(180, 22);
+            this.open_tool.Text = "打开";
+            this.open_tool.Click += new System.EventHandler(this.open_tool_Click);
             // 
-            // 退出ToolStripMenuItem1
+            // exit_tool1
             // 
-            this.退出ToolStripMenuItem1.Name = "退出ToolStripMenuItem1";
-            this.退出ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.退出ToolStripMenuItem1.Text = "退出";
-            this.退出ToolStripMenuItem1.Click += new System.EventHandler(this.退出ToolStripMenuItem1_Click);
+            this.exit_tool1.Name = "exit_tool1";
+            this.exit_tool1.Size = new System.Drawing.Size(180, 22);
+            this.exit_tool1.Text = "退出";
+            this.exit_tool1.Click += new System.EventHandler(this.exit_tool1_Click);
             // 
             // main_interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::cygl.UI.Properties.Resources.背景;
+            this.BackgroundImage = global::cygl.UI.Properties.Resources.餐具背景;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(886, 483);
             this.Controls.Add(this.lvDesk);
-            this.Controls.Add(this.zcd);
+            this.Controls.Add(this.main_menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
-            this.MainMenuStrip = this.zcd;
+            this.MainMenuStrip = this.main_menu;
             this.MaximizeBox = false;
             this.Name = "main_interface";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -330,9 +332,9 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.zjm_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.zjm_FormClosed);
             this.Load += new System.EventHandler(this.zjm_Load);
-            this.zcd.ResumeLayout(false);
-            this.zcd.PerformLayout();
-            this.yjcd.ResumeLayout(false);
+            this.main_menu.ResumeLayout(false);
+            this.main_menu.PerformLayout();
+            this.rightclick_menu.ResumeLayout(false);
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -341,36 +343,36 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip zcd;
-        private System.Windows.Forms.ToolStripMenuItem 桌台信息ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 职员信息ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 菜品信息ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 系统ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 注册管理员ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 修改管理员ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 注销管理员ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 历史账单ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 关于ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
-        private System.Windows.Forms.ContextMenuStrip yjcd;
-        private System.Windows.Forms.ToolStripMenuItem 开台ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 取消开台ToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip main_menu;
+        private System.Windows.Forms.ToolStripMenuItem table_infoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem staff_infoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem food_infoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem totalsystem_tool;
+        private System.Windows.Forms.ToolStripMenuItem admin_register;
+        private System.Windows.Forms.ToolStripMenuItem admin_change;
+        private System.Windows.Forms.ToolStripMenuItem admin_cancel;
+        private System.Windows.Forms.ToolStripMenuItem bill_record;
+        private System.Windows.Forms.ToolStripMenuItem about_info;
+        private System.Windows.Forms.ToolStripMenuItem exit_tool;
+        private System.Windows.Forms.ContextMenuStrip rightclick_menu;
+        private System.Windows.Forms.ToolStripMenuItem open_table;
+        private System.Windows.Forms.ToolStripMenuItem cancel_table;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripMenuItem 点加菜ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem add_food;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem 消费查询ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 结账ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem check_bill;
+        private System.Windows.Forms.ToolStripMenuItem pay_bill;
         public System.Windows.Forms.ListView lvDesk;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem 打开ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem open_tool;
+        private System.Windows.Forms.ToolStripMenuItem exit_tool1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem 日历ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 计算器ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 记事本ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calendar_tool;
+        private System.Windows.Forms.ToolStripMenuItem calculator_tool;
+        private System.Windows.Forms.ToolStripMenuItem notepad_tool;
 
     }
 }

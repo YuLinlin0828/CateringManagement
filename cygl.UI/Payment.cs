@@ -38,7 +38,7 @@ namespace cygl.UI
             }
             else
             {
-                cmd = new SqlCommand("select roombjf from room where roomname='" + Rname + "'", conn);
+                cmd = new SqlCommand("select roomfee from room where roomname='" + Rname + "'", conn);
                 bjf = cmd.ExecuteScalar().ToString();
                 if (bjf == "0")
                 {
@@ -107,7 +107,7 @@ namespace cygl.UI
                     cmd.ExecuteNonQuery();
                     cmd = new SqlCommand("delete from guestfood where roomname='" + Rname + "'", conn);
                     cmd.ExecuteNonQuery();
-                    cmd = new SqlCommand("update room set roomzt='´ýÓÃ' where roomname='" + Rname + "'", conn);
+                    cmd = new SqlCommand("update room set roomstate='´ýÓÃ' where roomname='" + Rname + "'", conn);
                     cmd.ExecuteNonQuery();
 
                     conn.Close();

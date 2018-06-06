@@ -100,16 +100,18 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // lszd
+            // bill_history
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::cygl.UI.Properties.Resources.蔬菜;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(647, 326);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "lszd";
+            this.Name = "bill_history";
             this.Text = "历史账单";
             this.Load += new System.EventHandler(this.lszd_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
