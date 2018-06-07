@@ -17,7 +17,7 @@ namespace cygl.UI
         }
         public string RName;
 
-        private void xfcx_Load(object sender, EventArgs e)
+        private void consumption_Load(object sender, EventArgs e)
         {
             SqlConnection conn = cygl.Helper.DBHelper.getconn();
             SqlDataAdapter sda = new SqlDataAdapter("select foodname,foodsum,foodallprice,waitername,beizhu,roomname,datatime from guestfood where roomname='" + RName + "'order by id desc", conn);
@@ -26,9 +26,14 @@ namespace cygl.UI
             dataGridView1.DataSource = ds.Tables[0];
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnexit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

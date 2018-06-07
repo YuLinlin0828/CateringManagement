@@ -16,11 +16,10 @@ namespace cygl.UI
         }
         BLL.food br = new cygl.BLL.food();
         Model.food mr = new cygl.Model.food();
-        private void button3_Click(object sender, EventArgs e)
+        private void btnquery_Click(object sender, EventArgs e)
         {
             dataGridView1.DataSource = br.getlist("");
         }
-        // œ¬‘ÿ”⁄www.mycodes.net
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             txtid.Text = dataGridView1.SelectedCells[0].Value.ToString();
@@ -30,7 +29,7 @@ namespace cygl.UI
             textBox3.Text = dataGridView1.SelectedCells[4].Value.ToString();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnadd_Click(object sender, EventArgs e)
         {
 
             if (txtid.Text == "")
@@ -50,7 +49,7 @@ namespace cygl.UI
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnmodify_Click(object sender, EventArgs e)
         {
             if (txtid.Text == "")
             {
@@ -69,7 +68,7 @@ namespace cygl.UI
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btndelete_Click(object sender, EventArgs e)
         {
             if (txtid.Text == "")
             {
@@ -82,12 +81,12 @@ namespace cygl.UI
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnexit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void btnreset_Click(object sender, EventArgs e)
         {
             txtid.Text = "";
             comboBox1.Text = "";
@@ -97,7 +96,12 @@ namespace cygl.UI
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void labelt_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void food_info_Load(object sender, EventArgs e)
         {
 
         }

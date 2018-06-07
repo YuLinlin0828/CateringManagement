@@ -76,9 +76,10 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label7.Location = new System.Drawing.Point(160, 82);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 12);
+            this.label7.Size = new System.Drawing.Size(44, 12);
             this.label7.TabIndex = 12;
             this.label7.Text = "备注：";
             // 
@@ -111,7 +112,7 @@
             this.Column5,
             this.Column6,
             this.Column7});
-            this.dgvFoods.Location = new System.Drawing.Point(7, 10);
+            this.dgvFoods.Location = new System.Drawing.Point(7, -2);
             this.dgvFoods.Name = "dgvFoods";
             this.dgvFoods.ReadOnly = true;
             this.dgvFoods.RowHeadersVisible = false;
@@ -172,9 +173,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label5.Location = new System.Drawing.Point(230, 49);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 12);
+            this.label5.Size = new System.Drawing.Size(51, 12);
             this.label5.TabIndex = 8;
             this.label5.Text = "=总价：";
             // 
@@ -222,27 +224,30 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label6.Location = new System.Drawing.Point(8, 83);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 12);
+            this.label6.Size = new System.Drawing.Size(57, 12);
             this.label6.TabIndex = 10;
             this.label6.Text = "服务员：";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.Location = new System.Drawing.Point(121, 49);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 12);
+            this.label4.Size = new System.Drawing.Size(57, 12);
             this.label4.TabIndex = 5;
             this.label4.Text = "×数量：";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.Location = new System.Drawing.Point(6, 49);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 12);
+            this.label3.Size = new System.Drawing.Size(44, 12);
             this.label3.TabIndex = 4;
             this.label3.Text = "单价：";
             // 
@@ -257,9 +262,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.Location = new System.Drawing.Point(121, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 12);
+            this.label2.Size = new System.Drawing.Size(70, 12);
             this.label2.TabIndex = 2;
             this.label2.Text = "菜品名称：";
             // 
@@ -274,9 +280,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(6, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 12);
+            this.label1.Size = new System.Drawing.Size(70, 12);
             this.label1.TabIndex = 0;
             this.label1.Text = "菜单编号：";
             // 
@@ -294,9 +301,10 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(175, 14);
+            this.btnExit.Font = new System.Drawing.Font("宋体", 9F);
+            this.btnExit.Location = new System.Drawing.Point(190, 3);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.Size = new System.Drawing.Size(60, 30);
             this.btnExit.TabIndex = 3;
             this.btnExit.Text = "退出";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -304,9 +312,10 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(94, 14);
+            this.btnDelete.Font = new System.Drawing.Font("宋体", 9F);
+            this.btnDelete.Location = new System.Drawing.Point(100, 3);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.Size = new System.Drawing.Size(60, 30);
             this.btnDelete.TabIndex = 1;
             this.btnDelete.Text = "删除";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -314,9 +323,10 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(10, 14);
+            this.btnSave.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnSave.Location = new System.Drawing.Point(10, 3);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.Size = new System.Drawing.Size(60, 30);
             this.btnSave.TabIndex = 0;
             this.btnSave.Text = "保存";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -326,9 +336,10 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.tvFood);
+            this.groupBox1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBox1.Location = new System.Drawing.Point(22, 20);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(161, 350);
+            this.groupBox1.Size = new System.Drawing.Size(161, 326);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "菜品类别";
@@ -337,7 +348,7 @@
             // 
             this.tvFood.Location = new System.Drawing.Point(6, 20);
             this.tvFood.Name = "tvFood";
-            this.tvFood.Size = new System.Drawing.Size(149, 323);
+            this.tvFood.Size = new System.Drawing.Size(149, 294);
             this.tvFood.TabIndex = 0;
             this.tvFood.DoubleClick += new System.EventHandler(this.tvFood_DoubleClick);
             // 
@@ -351,11 +362,11 @@
             this.groupBox4.TabIndex = 7;
             this.groupBox4.TabStop = false;
             // 
-            // djc
+            // order_add_food
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::cygl.UI.Properties.Resources.登陆背景;
+            this.BackgroundImage = global::cygl.UI.Properties.Resources.蔬菜;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(560, 390);
             this.Controls.Add(this.groupBox2);
@@ -364,7 +375,7 @@
             this.Controls.Add(this.groupBox4);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "djc";
+            this.Name = "order_add_food";
             this.Text = "点加菜";
             this.Load += new System.EventHandler(this.djc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFoods)).EndInit();

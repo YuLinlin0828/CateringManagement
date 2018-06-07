@@ -9,16 +9,16 @@ using System.Data.SqlClient;
 
 namespace cygl.UI
 {
-    public partial class kt : Form
+    public partial class start_table : Form
     {
-        public kt()
+        public start_table()
         {
             InitializeComponent();
         }
         public string name;
         public SqlConnection conn;
 
-        private void kt_Load(object sender, EventArgs e)
+        private void start_table_Load(object sender, EventArgs e)
         {
             conn = cygl.Helper.DBHelper.getconn();
             conn.Open();
@@ -26,17 +26,17 @@ namespace cygl.UI
             SqlDataReader sdr = cmd.ExecuteReader();
             while (sdr.Read())
             {
-                cbNum.Items.Add(sdr["roomname"].ToString().Trim());
+                tableno.Items.Add(sdr["roomname"].ToString().Trim());
             }
-            cbNum.SelectedItem = name.Trim();
+            tableno.SelectedItem = name.Trim();
             sdr.Close();
             cmd = new SqlCommand("select * from waiter", conn);
             sdr = cmd.ExecuteReader();
             while (sdr.Read())
             {
-                cbWaiter.Items.Add(sdr["waitername"].ToString().Trim());
+                theWaiter.Items.Add(sdr["waitername"].ToString().Trim());
             }
-            cbWaiter.SelectedIndex = 0;
+            theWaiter.SelectedIndex = 0;
             sdr.Close();
         }
 
@@ -57,7 +57,7 @@ namespace cygl.UI
             }
             else
             {
-                string roomname = cbNum.SelectedItem.ToString();
+                string roomname = tableno.SelectedItem.ToString();
                 SqlCommand cmd1 = new SqlCommand("update room set roomstate='สนำร' where roomname='" + name + "'", conn);
                 cmd1.ExecuteNonQuery();
                 this.Close();

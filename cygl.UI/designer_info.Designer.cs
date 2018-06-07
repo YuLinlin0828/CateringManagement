@@ -29,140 +29,184 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(designer_info));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.designerno = new System.Windows.Forms.Label();
+            this.designername = new System.Windows.Forms.Label();
+            this.designerclass = new System.Windows.Forms.Label();
+            this.label_design = new System.Windows.Forms.Label();
+            this.class1 = new System.Windows.Forms.Label();
+            this.class2 = new System.Windows.Forms.Label();
+            this.class3 = new System.Windows.Forms.Label();
+            this.class4 = new System.Windows.Forms.Label();
+            this.name1 = new System.Windows.Forms.Label();
+            this.name2 = new System.Windows.Forms.Label();
+            this.name3 = new System.Windows.Forms.Label();
+            this.name4 = new System.Windows.Forms.Label();
+            this.label_n1 = new System.Windows.Forms.Label();
+            this.label_n2 = new System.Windows.Forms.Label();
+            this.label_n3 = new System.Windows.Forms.Label();
+            this.label_n4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // designerno
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(210, 79);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "学号";
+            this.designerno.AutoSize = true;
+            this.designerno.BackColor = System.Drawing.Color.Transparent;
+            this.designerno.Location = new System.Drawing.Point(210, 40);
+            this.designerno.Name = "designerno";
+            this.designerno.Size = new System.Drawing.Size(51, 20);
+            this.designerno.TabIndex = 0;
+            this.designerno.Text = "学号";
             // 
-            // label2
+            // designername
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(375, 79);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "姓名";
+            this.designername.AutoSize = true;
+            this.designername.BackColor = System.Drawing.Color.Transparent;
+            this.designername.Location = new System.Drawing.Point(375, 40);
+            this.designername.Name = "designername";
+            this.designername.Size = new System.Drawing.Size(51, 20);
+            this.designername.TabIndex = 0;
+            this.designername.Text = "姓名";
             // 
-            // label3
+            // designerclass
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(60, 79);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "班级";
+            this.designerclass.AutoSize = true;
+            this.designerclass.BackColor = System.Drawing.Color.Transparent;
+            this.designerclass.Location = new System.Drawing.Point(60, 40);
+            this.designerclass.Name = "designerclass";
+            this.designerclass.Size = new System.Drawing.Size(51, 20);
+            this.designerclass.TabIndex = 0;
+            this.designerclass.Text = "班级";
             // 
-            // label4
+            // label_design
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(173, 30);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(156, 20);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "系统设计人信息";
+            this.label_design.AutoSize = true;
+            this.label_design.BackColor = System.Drawing.Color.Transparent;
+            this.label_design.ForeColor = System.Drawing.Color.Black;
+            this.label_design.Location = new System.Drawing.Point(180, 3);
+            this.label_design.Name = "label_design";
+            this.label_design.Size = new System.Drawing.Size(114, 20);
+            this.label_design.TabIndex = 0;
+            this.label_design.Text = "开发者信息";
             // 
-            // label5
+            // class1
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(39, 134);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 20);
-            this.label5.TabIndex = 0;
-            this.label5.Text = ".net123";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.class1.AutoSize = true;
+            this.class1.BackColor = System.Drawing.Color.Transparent;
+            this.class1.Location = new System.Drawing.Point(39, 80);
+            this.class1.Name = "class1";
+            this.class1.Size = new System.Drawing.Size(97, 20);
+            this.class1.TabIndex = 0;
+            this.class1.Text = "F1503015";
             // 
-            // label7
+            // class2
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(364, 134);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 20);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "王鹏帅";
+            this.class2.AutoSize = true;
+            this.class2.BackColor = System.Drawing.Color.Transparent;
+            this.class2.Location = new System.Drawing.Point(39, 120);
+            this.class2.Name = "class2";
+            this.class2.Size = new System.Drawing.Size(97, 20);
+            this.class2.TabIndex = 0;
+            this.class2.Text = "F1503004";
             // 
-            // label8
+            // class3
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Location = new System.Drawing.Point(39, 182);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 20);
-            this.label8.TabIndex = 0;
-            this.label8.Text = ".net123";
+            this.class3.AutoSize = true;
+            this.class3.BackColor = System.Drawing.Color.Transparent;
+            this.class3.Location = new System.Drawing.Point(39, 160);
+            this.class3.Name = "class3";
+            this.class3.Size = new System.Drawing.Size(97, 20);
+            this.class3.TabIndex = 0;
+            this.class3.Text = "F1503005";
             // 
-            // label9
+            // class4
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Location = new System.Drawing.Point(39, 235);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(86, 20);
-            this.label9.TabIndex = 0;
-            this.label9.Text = ".net123";
+            this.class4.AutoSize = true;
+            this.class4.BackColor = System.Drawing.Color.Transparent;
+            this.class4.Location = new System.Drawing.Point(39, 195);
+            this.class4.Name = "class4";
+            this.class4.Size = new System.Drawing.Size(97, 20);
+            this.class4.TabIndex = 0;
+            this.class4.Text = "F1503001";
             // 
-            // label10
+            // name1
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(173, 182);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(141, 20);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "201207082302";
+            this.name1.AutoSize = true;
+            this.name1.BackColor = System.Drawing.Color.Transparent;
+            this.name1.Location = new System.Drawing.Point(375, 80);
+            this.name1.Name = "name1";
+            this.name1.Size = new System.Drawing.Size(51, 20);
+            this.name1.TabIndex = 0;
+            this.name1.Text = "倪洁";
             // 
-            // label11
+            // name2
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Location = new System.Drawing.Point(364, 182);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(72, 20);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "袁帅歌";
+            this.name2.AutoSize = true;
+            this.name2.BackColor = System.Drawing.Color.Transparent;
+            this.name2.Location = new System.Drawing.Point(375, 120);
+            this.name2.Name = "name2";
+            this.name2.Size = new System.Drawing.Size(72, 20);
+            this.name2.TabIndex = 0;
+            this.name2.Text = "于林林";
             // 
-            // label12
+            // name3
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Location = new System.Drawing.Point(173, 235);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(141, 20);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "201207082304";
+            this.name3.AutoSize = true;
+            this.name3.BackColor = System.Drawing.Color.Transparent;
+            this.name3.Location = new System.Drawing.Point(375, 160);
+            this.name3.Name = "name3";
+            this.name3.Size = new System.Drawing.Size(51, 20);
+            this.name3.TabIndex = 0;
+            this.name3.Text = "王晨";
             // 
-            // label13
+            // name4
             // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Location = new System.Drawing.Point(364, 235);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(72, 20);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "裴晓娟";
+            this.name4.AutoSize = true;
+            this.name4.BackColor = System.Drawing.Color.Transparent;
+            this.name4.Location = new System.Drawing.Point(375, 195);
+            this.name4.Name = "name4";
+            this.name4.Size = new System.Drawing.Size(72, 20);
+            this.name4.TabIndex = 0;
+            this.name4.Text = "周奕雯";
+            // 
+            // label_n1
+            // 
+            this.label_n1.AutoSize = true;
+            this.label_n1.BackColor = System.Drawing.Color.Transparent;
+            this.label_n1.Location = new System.Drawing.Point(173, 80);
+            this.label_n1.Name = "label_n1";
+            this.label_n1.Size = new System.Drawing.Size(141, 20);
+            this.label_n1.TabIndex = 0;
+            this.label_n1.Text = "515030910354";
+            // 
+            // label_n2
+            // 
+            this.label_n2.AutoSize = true;
+            this.label_n2.BackColor = System.Drawing.Color.Transparent;
+            this.label_n2.Location = new System.Drawing.Point(173, 120);
+            this.label_n2.Name = "label_n2";
+            this.label_n2.Size = new System.Drawing.Size(141, 20);
+            this.label_n2.TabIndex = 0;
+            this.label_n2.Text = "515030910078";
+            // 
+            // label_n3
+            // 
+            this.label_n3.AutoSize = true;
+            this.label_n3.BackColor = System.Drawing.Color.Transparent;
+            this.label_n3.Location = new System.Drawing.Point(173, 160);
+            this.label_n3.Name = "label_n3";
+            this.label_n3.Size = new System.Drawing.Size(141, 20);
+            this.label_n3.TabIndex = 0;
+            this.label_n3.Text = "515030910106";
+            // 
+            // label_n4
+            // 
+            this.label_n4.AutoSize = true;
+            this.label_n4.BackColor = System.Drawing.Color.Transparent;
+            this.label_n4.Location = new System.Drawing.Point(173, 195);
+            this.label_n4.Name = "label_n4";
+            this.label_n4.Size = new System.Drawing.Size(119, 20);
+            this.label_n4.TabIndex = 0;
+            this.label_n4.Text = "5140809049";
             // 
             // designer_info
             // 
@@ -171,18 +215,22 @@
             this.BackgroundImage = global::cygl.UI.Properties.Resources.蔬菜;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(530, 295);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label_design);
+            this.Controls.Add(this.name4);
+            this.Controls.Add(this.name3);
+            this.Controls.Add(this.name2);
+            this.Controls.Add(this.name1);
+            this.Controls.Add(this.label_n4);
+            this.Controls.Add(this.label_n3);
+            this.Controls.Add(this.label_n2);
+            this.Controls.Add(this.label_n1);
+            this.Controls.Add(this.class4);
+            this.Controls.Add(this.class3);
+            this.Controls.Add(this.class2);
+            this.Controls.Add(this.class1);
+            this.Controls.Add(this.designerclass);
+            this.Controls.Add(this.designername);
+            this.Controls.Add(this.designerno);
             this.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
@@ -190,7 +238,7 @@
             this.MinimizeBox = false;
             this.Name = "designer_info";
             this.Text = "关于";
-            this.Load += new System.EventHandler(this.gy_Load);
+            this.Load += new System.EventHandler(this.about_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,17 +246,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label designerno;
+        private System.Windows.Forms.Label designername;
+        private System.Windows.Forms.Label designerclass;
+        private System.Windows.Forms.Label label_design;
+        private System.Windows.Forms.Label class1;
+        private System.Windows.Forms.Label class2;
+        private System.Windows.Forms.Label class3;
+        private System.Windows.Forms.Label class4;
+        private System.Windows.Forms.Label name1;
+        private System.Windows.Forms.Label name2;
+        private System.Windows.Forms.Label name3;
+        private System.Windows.Forms.Label name4;
+        private System.Windows.Forms.Label label_n1;
+        private System.Windows.Forms.Label label_n2;
+        private System.Windows.Forms.Label label_n3;
+        private System.Windows.Forms.Label label_n4;
     }
 }

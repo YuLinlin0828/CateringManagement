@@ -90,11 +90,12 @@
     <Compile Include="Payment.Designer.cs">
       <DependentUpon>Payment.cs</DependentUpon>
     </Compile>
-    <Compile Include="start_table.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include=".Designer.cs">
-      <DependentUpon>start_table.cs</DependentUpon>
+    <Compile Include="start_table.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="bill_history.cs">
@@ -114,6 +115,9 @@
     </Compile>
     <Compile Include="consumption_inquiry.Designer.cs">
       <DependentUpon>consumption_inquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="start_table.Designer.cs">
+      <DependentUpon>start_table.cs</DependentUpon>
     </Compile>
     <Compile Include="system_maintenance.cs">
       <SubType>Form</SubType>
@@ -159,8 +163,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="calender.resx">
       <SubType>Designer</SubType>
@@ -186,11 +190,6 @@
       <SubType>Designer</SubType>
       <DependentUpon>staff_info.cs</DependentUpon>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -270,7 +269,15 @@
     <None Include="Resources\背景橙.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\餐具背景.jpg" />
+    <None Include="Resources\餐馆进餐.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\空桌.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景青.jpg" />
+    <Content Include="Resources\餐具背景.jpg" />
+    <None Include="Resources\餐具背景1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

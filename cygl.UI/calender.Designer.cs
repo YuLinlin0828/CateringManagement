@@ -34,25 +34,30 @@
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(2, 0);
+            this.monthCalendar1.BackColor = System.Drawing.SystemColors.Window;
+            this.monthCalendar1.Location = new System.Drawing.Point(24, 0);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.ShowToday = false;
             this.monthCalendar1.ShowTodayCircle = false;
             this.monthCalendar1.TabIndex = 1;
-            this.monthCalendar1.TitleBackColor = System.Drawing.Color.DarkSeaGreen;
+            this.monthCalendar1.TitleBackColor = System.Drawing.Color.Lime;
             this.monthCalendar1.TitleForeColor = System.Drawing.Color.Black;
             this.monthCalendar1.TrailingForeColor = System.Drawing.Color.White;
             // 
-            // rl
+            // calender
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::cygl.UI.Properties.Resources.餐具背景;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(272, 176);
             this.Controls.Add(this.monthCalendar1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "rl";
+            this.Name = "calender";
             this.Text = "日历";
+            this.Load += new System.EventHandler(this.calender_Load);
             this.ResumeLayout(false);
 
         }

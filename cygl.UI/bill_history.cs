@@ -16,7 +16,7 @@ namespace cygl.UI
             InitializeComponent();
         }
 
-        private void lszd_Load(object sender, EventArgs e)
+        private void billhistory_Load(object sender, EventArgs e)
         {
 
             SqlConnection conn = cygl.Helper.DBHelper.getconn();
@@ -28,10 +28,15 @@ namespace cygl.UI
             conn.Close();
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        //ÍË³ö°´Å¥
+        private void Btnexit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -84,28 +84,28 @@
             this.main_menu.Size = new System.Drawing.Size(886, 27);
             this.main_menu.TabIndex = 0;
             this.main_menu.Text = "menuStrip1";
-            this.main_menu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.main_menu_ItemClicked);
+            this.main_menu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.Main_menu_ItemClicked);
             // 
             // table_infoToolStripMenuItem
             // 
             this.table_infoToolStripMenuItem.Name = "table_infoToolStripMenuItem";
             this.table_infoToolStripMenuItem.Size = new System.Drawing.Size(105, 23);
             this.table_infoToolStripMenuItem.Text = "桌台信息";
-            this.table_infoToolStripMenuItem.Click += new System.EventHandler(this.table_infoToolStripMenuItem_Click);
+            this.table_infoToolStripMenuItem.Click += new System.EventHandler(this.Table_infoToolStripMenuItem_Click);
             // 
             // staff_infoToolStripMenuItem
             // 
             this.staff_infoToolStripMenuItem.Name = "staff_infoToolStripMenuItem";
             this.staff_infoToolStripMenuItem.Size = new System.Drawing.Size(105, 23);
             this.staff_infoToolStripMenuItem.Text = "职员信息";
-            this.staff_infoToolStripMenuItem.Click += new System.EventHandler(this.staff_infoToolStripMenuItem_Click);
+            this.staff_infoToolStripMenuItem.Click += new System.EventHandler(this.Staff_infoToolStripMenuItem_Click);
             // 
             // food_infoToolStripMenuItem
             // 
             this.food_infoToolStripMenuItem.Name = "food_infoToolStripMenuItem";
             this.food_infoToolStripMenuItem.Size = new System.Drawing.Size(105, 23);
             this.food_infoToolStripMenuItem.Text = "菜品信息";
-            this.food_infoToolStripMenuItem.Click += new System.EventHandler(this.food_infoToolStripMenuItem_Click);
+            this.food_infoToolStripMenuItem.Click += new System.EventHandler(this.Food_infoToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -122,21 +122,21 @@
             this.calendar_tool.Name = "calendar_tool";
             this.calendar_tool.Size = new System.Drawing.Size(141, 24);
             this.calendar_tool.Text = "日历";
-            this.calendar_tool.Click += new System.EventHandler(this.calendar_tool_Click);
+            this.calendar_tool.Click += new System.EventHandler(this.Calendar_tool_Click);
             // 
             // calculator_tool
             // 
             this.calculator_tool.Name = "calculator_tool";
             this.calculator_tool.Size = new System.Drawing.Size(141, 24);
             this.calculator_tool.Text = "计算器";
-            this.calculator_tool.Click += new System.EventHandler(this.calculator_tool_Click);
+            this.calculator_tool.Click += new System.EventHandler(this.Calculator_tool_Click);
             // 
             // notepad_tool
             // 
             this.notepad_tool.Name = "notepad_tool";
             this.notepad_tool.Size = new System.Drawing.Size(141, 24);
             this.notepad_tool.Text = "记事本";
-            this.notepad_tool.Click += new System.EventHandler(this.notepad_tool_Click);
+            this.notepad_tool.Click += new System.EventHandler(this.Notepad_tool_Click);
             // 
             // totalsystem_tool
             // 
@@ -153,49 +153,49 @@
             this.admin_register.Name = "admin_register";
             this.admin_register.Size = new System.Drawing.Size(183, 24);
             this.admin_register.Text = "注册管理员";
-            this.admin_register.Click += new System.EventHandler(this.admin_register_Click);
+            this.admin_register.Click += new System.EventHandler(this.Admin_register_Click);
             // 
             // admin_change
             // 
             this.admin_change.Name = "admin_change";
             this.admin_change.Size = new System.Drawing.Size(183, 24);
             this.admin_change.Text = "修改管理员";
-            this.admin_change.Click += new System.EventHandler(this.admin_change_Click);
+            this.admin_change.Click += new System.EventHandler(this.Admin_change_Click);
             // 
             // admin_cancel
             // 
             this.admin_cancel.Name = "admin_cancel";
             this.admin_cancel.Size = new System.Drawing.Size(183, 24);
             this.admin_cancel.Text = "注销管理员";
-            this.admin_cancel.Click += new System.EventHandler(this.admin_cancel_Click);
+            this.admin_cancel.Click += new System.EventHandler(this.Admin_cancel_Click);
             // 
             // bill_record
             // 
             this.bill_record.Name = "bill_record";
             this.bill_record.Size = new System.Drawing.Size(105, 23);
             this.bill_record.Text = "历史账单";
-            this.bill_record.Click += new System.EventHandler(this.bill_record_Click);
+            this.bill_record.Click += new System.EventHandler(this.Bill_record_Click);
             // 
             // about_info
             // 
             this.about_info.Name = "about_info";
             this.about_info.Size = new System.Drawing.Size(63, 23);
             this.about_info.Text = "关于";
-            this.about_info.Click += new System.EventHandler(this.about_info_Click);
+            this.about_info.Click += new System.EventHandler(this.About_info_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(84, 23);
             this.toolStripMenuItem1.Text = "最小化";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.ToolStripMenuItem1_Click);
             // 
             // exit_tool
             // 
             this.exit_tool.Name = "exit_tool";
             this.exit_tool.Size = new System.Drawing.Size(63, 23);
             this.exit_tool.Text = "退出";
-            this.exit_tool.Click += new System.EventHandler(this.exit_tool_Click);
+            this.exit_tool.Click += new System.EventHandler(this.Exit_tool_Click);
             // 
             // rightclick_menu
             // 
@@ -215,14 +215,14 @@
             this.open_table.Name = "open_table";
             this.open_table.Size = new System.Drawing.Size(124, 22);
             this.open_table.Text = "开台";
-            this.open_table.Click += new System.EventHandler(this.open_table_Click);
+            this.open_table.Click += new System.EventHandler(this.Open_table_Click);
             // 
             // cancel_table
             // 
             this.cancel_table.Name = "cancel_table";
             this.cancel_table.Size = new System.Drawing.Size(124, 22);
             this.cancel_table.Text = "取消开台";
-            this.cancel_table.Click += new System.EventHandler(this.cancel_table_Click);
+            this.cancel_table.Click += new System.EventHandler(this.Cancel_table_Click);
             // 
             // toolStripSeparator3
             // 
@@ -234,7 +234,7 @@
             this.add_food.Name = "add_food";
             this.add_food.Size = new System.Drawing.Size(124, 22);
             this.add_food.Text = "点\\加菜";
-            this.add_food.Click += new System.EventHandler(this.add_food_Click);
+            this.add_food.Click += new System.EventHandler(this.Add_food_Click);
             // 
             // toolStripSeparator1
             // 
@@ -246,14 +246,14 @@
             this.check_bill.Name = "check_bill";
             this.check_bill.Size = new System.Drawing.Size(124, 22);
             this.check_bill.Text = "消费查询";
-            this.check_bill.Click += new System.EventHandler(this.check_bill_Click);
+            this.check_bill.Click += new System.EventHandler(this.Check_bill_Click);
             // 
             // pay_bill
             // 
             this.pay_bill.Name = "pay_bill";
             this.pay_bill.Size = new System.Drawing.Size(124, 22);
             this.pay_bill.Text = "结账";
-            this.pay_bill.Click += new System.EventHandler(this.pay_bill_Click);
+            this.pay_bill.Click += new System.EventHandler(this.Pay_bill_Click);
             // 
             // lvDesk
             // 
@@ -270,8 +270,8 @@
             this.lvDesk.Size = new System.Drawing.Size(886, 453);
             this.lvDesk.TabIndex = 5;
             this.lvDesk.UseCompatibleStateImageBehavior = false;
-            this.lvDesk.SelectedIndexChanged += new System.EventHandler(this.lvDesk_SelectedIndexChanged);
-            this.lvDesk.Click += new System.EventHandler(this.lvDesk_Click);
+            this.lvDesk.SelectedIndexChanged += new System.EventHandler(this.LvDesk_SelectedIndexChanged);
+            this.lvDesk.Click += new System.EventHandler(this.LvDesk_Click);
             // 
             // imageList1
             // 
@@ -286,7 +286,7 @@
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
             this.notifyIcon1.Text = "餐饮管理系统";
             this.notifyIcon1.Visible = true;
-            this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
+            this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.NotifyIcon1_MouseDoubleClick);
             // 
             // contextMenuStrip1
             // 
@@ -295,27 +295,27 @@
             this.exit_tool1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(101, 48);
-            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.ContextMenuStrip1_Opening);
             // 
             // open_tool
             // 
             this.open_tool.Name = "open_tool";
-            this.open_tool.Size = new System.Drawing.Size(180, 22);
+            this.open_tool.Size = new System.Drawing.Size(100, 22);
             this.open_tool.Text = "打开";
-            this.open_tool.Click += new System.EventHandler(this.open_tool_Click);
+            this.open_tool.Click += new System.EventHandler(this.Open_tool_Click);
             // 
             // exit_tool1
             // 
             this.exit_tool1.Name = "exit_tool1";
-            this.exit_tool1.Size = new System.Drawing.Size(180, 22);
+            this.exit_tool1.Size = new System.Drawing.Size(100, 22);
             this.exit_tool1.Text = "退出";
-            this.exit_tool1.Click += new System.EventHandler(this.exit_tool1_Click);
+            this.exit_tool1.Click += new System.EventHandler(this.Exit_tool1_Click);
             // 
             // main_interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::cygl.UI.Properties.Resources.餐具背景;
+            this.BackgroundImage = global::cygl.UI.Properties.Resources.蔬菜;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(886, 483);
             this.Controls.Add(this.lvDesk);
@@ -328,10 +328,10 @@
             this.Name = "main_interface";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "餐饮管理系统";
-            this.Activated += new System.EventHandler(this.zjm_Activated);
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.zjm_FormClosing);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.zjm_FormClosed);
-            this.Load += new System.EventHandler(this.zjm_Load);
+            this.Activated += new System.EventHandler(this.Mainscreen_Activated);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Mainscreen_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Mainscreen_FormClosed);
+            this.Load += new System.EventHandler(this.Mainscreen_Load);
             this.main_menu.ResumeLayout(false);
             this.main_menu.PerformLayout();
             this.rightclick_menu.ResumeLayout(false);
@@ -362,7 +362,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem check_bill;
         private System.Windows.Forms.ToolStripMenuItem pay_bill;
-        public System.Windows.Forms.ListView lvDesk;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
@@ -373,6 +372,6 @@
         private System.Windows.Forms.ToolStripMenuItem calendar_tool;
         private System.Windows.Forms.ToolStripMenuItem calculator_tool;
         private System.Windows.Forms.ToolStripMenuItem notepad_tool;
-
+        private System.Windows.Forms.ListView lvDesk;
     }
 }

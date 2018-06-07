@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(staff_info));
-            this.label1 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.labeltitle = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btndelete = new System.Windows.Forms.Button();
+            this.btnquery = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnmodify = new System.Windows.Forms.Button();
+            this.btnadd = new System.Windows.Forms.Button();
             this.txtid = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelname = new System.Windows.Forms.Label();
             this.txtname = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lgender = new System.Windows.Forms.Label();
+            this.labelage = new System.Windows.Forms.Label();
             this.txtage = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.labelnum = new System.Windows.Forms.Label();
             this.txtidcard = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.phonenum = new System.Windows.Forms.Label();
             this.txttel = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,94 +55,95 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comsex = new System.Windows.Forms.ComboBox();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnreset = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // labeltitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("楷体", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(240, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 35);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "职员信息表";
+            this.labeltitle.AutoSize = true;
+            this.labeltitle.BackColor = System.Drawing.Color.Transparent;
+            this.labeltitle.Font = new System.Drawing.Font("楷体", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labeltitle.Location = new System.Drawing.Point(194, 9);
+            this.labeltitle.Name = "labeltitle";
+            this.labeltitle.Size = new System.Drawing.Size(200, 35);
+            this.labeltitle.TabIndex = 3;
+            this.labeltitle.Text = "职员信息表";
             // 
-            // button5
+            // btnExit
             // 
-            this.button5.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button5.Location = new System.Drawing.Point(552, 20);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(95, 37);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "退出";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnExit.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnExit.Location = new System.Drawing.Point(552, 20);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(95, 37);
+            this.btnExit.TabIndex = 10;
+            this.btnExit.Text = "退出";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // button4
+            // btndelete
             // 
-            this.button4.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.Location = new System.Drawing.Point(421, 20);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(95, 37);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "删除";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btndelete.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btndelete.Location = new System.Drawing.Point(421, 20);
+            this.btndelete.Name = "btndelete";
+            this.btndelete.Size = new System.Drawing.Size(95, 37);
+            this.btndelete.TabIndex = 9;
+            this.btndelete.Text = "删除";
+            this.btndelete.UseVisualStyleBackColor = true;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
-            // button3
+            // btnquery
             // 
-            this.button3.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.Location = new System.Drawing.Point(17, 20);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(95, 37);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "查询";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnquery.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnquery.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnquery.Location = new System.Drawing.Point(17, 20);
+            this.btnquery.Name = "btnquery";
+            this.btnquery.Size = new System.Drawing.Size(95, 37);
+            this.btnquery.TabIndex = 6;
+            this.btnquery.Text = "查询";
+            this.btnquery.UseVisualStyleBackColor = true;
+            this.btnquery.Click += new System.EventHandler(this.btnquery_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnExit);
+            this.groupBox1.Controls.Add(this.btndelete);
+            this.groupBox1.Controls.Add(this.btnquery);
+            this.groupBox1.Controls.Add(this.btnmodify);
+            this.groupBox1.Controls.Add(this.btnadd);
             this.groupBox1.Location = new System.Drawing.Point(14, 415);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(668, 72);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             // 
-            // button2
+            // btnmodify
             // 
-            this.button2.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(285, 20);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 37);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "修改";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnmodify.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnmodify.Location = new System.Drawing.Point(285, 20);
+            this.btnmodify.Name = "btnmodify";
+            this.btnmodify.Size = new System.Drawing.Size(95, 37);
+            this.btnmodify.TabIndex = 8;
+            this.btnmodify.Text = "修改";
+            this.btnmodify.UseVisualStyleBackColor = true;
+            this.btnmodify.Click += new System.EventHandler(this.btnmodify_Click);
             // 
-            // button1
+            // btnadd
             // 
-            this.button1.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(145, 20);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 37);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "添加";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnadd.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnadd.Location = new System.Drawing.Point(145, 20);
+            this.btnadd.Name = "btnadd";
+            this.btnadd.Size = new System.Drawing.Size(95, 37);
+            this.btnadd.TabIndex = 7;
+            this.btnadd.Text = "添加";
+            this.btnadd.UseVisualStyleBackColor = true;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
             // 
             // txtid
             // 
-            this.txtid.Location = new System.Drawing.Point(142, 260);
+            this.txtid.Location = new System.Drawing.Point(200, 260);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(124, 21);
             this.txtid.TabIndex = 0;
@@ -152,91 +153,92 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(36, 260);
+            this.label2.Location = new System.Drawing.Point(155, 260);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 20);
             this.label2.TabIndex = 7;
             this.label2.Text = "ID:";
             // 
-            // label3
+            // labelname
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(341, 261);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 20);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "职员姓名:";
+            this.labelname.AutoSize = true;
+            this.labelname.BackColor = System.Drawing.Color.Transparent;
+            this.labelname.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelname.Location = new System.Drawing.Point(361, 260);
+            this.labelname.Name = "labelname";
+            this.labelname.Size = new System.Drawing.Size(99, 20);
+            this.labelname.TabIndex = 7;
+            this.labelname.Text = "职员姓名:";
             // 
             // txtname
             // 
-            this.txtname.Location = new System.Drawing.Point(447, 261);
+            this.txtname.Location = new System.Drawing.Point(466, 260);
             this.txtname.Name = "txtname";
             this.txtname.Size = new System.Drawing.Size(124, 21);
             this.txtname.TabIndex = 1;
             // 
-            // label4
+            // lgender
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(36, 313);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 20);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "职员性别:";
+            this.lgender.AutoSize = true;
+            this.lgender.BackColor = System.Drawing.Color.Transparent;
+            this.lgender.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lgender.Location = new System.Drawing.Point(95, 315);
+            this.lgender.Name = "lgender";
+            this.lgender.Size = new System.Drawing.Size(99, 20);
+            this.lgender.TabIndex = 7;
+            this.lgender.Text = "职员性别:";
+            this.lgender.Click += new System.EventHandler(this.lgender_Click);
             // 
-            // label5
+            // labelage
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(341, 314);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(99, 20);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "职员年龄:";
+            this.labelage.AutoSize = true;
+            this.labelage.BackColor = System.Drawing.Color.Transparent;
+            this.labelage.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelage.Location = new System.Drawing.Point(361, 315);
+            this.labelage.Name = "labelage";
+            this.labelage.Size = new System.Drawing.Size(99, 20);
+            this.labelage.TabIndex = 7;
+            this.labelage.Text = "职员年龄:";
             // 
             // txtage
             // 
-            this.txtage.Location = new System.Drawing.Point(447, 314);
+            this.txtage.Location = new System.Drawing.Point(466, 315);
             this.txtage.Name = "txtage";
             this.txtage.Size = new System.Drawing.Size(124, 21);
             this.txtage.TabIndex = 3;
             // 
-            // label6
+            // labelnum
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(36, 372);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 20);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "身份证号:";
+            this.labelnum.AutoSize = true;
+            this.labelnum.BackColor = System.Drawing.Color.Transparent;
+            this.labelnum.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelnum.Location = new System.Drawing.Point(95, 370);
+            this.labelnum.Name = "labelnum";
+            this.labelnum.Size = new System.Drawing.Size(99, 20);
+            this.labelnum.TabIndex = 7;
+            this.labelnum.Text = "身份证号:";
             // 
             // txtidcard
             // 
-            this.txtidcard.Location = new System.Drawing.Point(142, 372);
+            this.txtidcard.Location = new System.Drawing.Point(200, 370);
             this.txtidcard.Name = "txtidcard";
             this.txtidcard.Size = new System.Drawing.Size(124, 21);
             this.txtidcard.TabIndex = 4;
             // 
-            // label7
+            // phonenum
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(341, 373);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(99, 20);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "手机号码:";
+            this.phonenum.AutoSize = true;
+            this.phonenum.BackColor = System.Drawing.Color.Transparent;
+            this.phonenum.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.phonenum.Location = new System.Drawing.Point(361, 370);
+            this.phonenum.Name = "phonenum";
+            this.phonenum.Size = new System.Drawing.Size(99, 20);
+            this.phonenum.TabIndex = 7;
+            this.phonenum.Text = "手机号码:";
             // 
             // txttel
             // 
-            this.txttel.Location = new System.Drawing.Point(447, 373);
+            this.txttel.Location = new System.Drawing.Point(466, 370);
             this.txttel.Name = "txttel";
             this.txttel.Size = new System.Drawing.Size(124, 21);
             this.txttel.TabIndex = 5;
@@ -255,14 +257,14 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            this.dataGridView1.Location = new System.Drawing.Point(30, 61);
+            this.dataGridView1.Location = new System.Drawing.Point(40, 56);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.ShowEditingIcon = false;
-            this.dataGridView1.Size = new System.Drawing.Size(640, 175);
+            this.dataGridView1.Size = new System.Drawing.Size(603, 161);
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -314,29 +316,30 @@
             this.comsex.Items.AddRange(new object[] {
             "男",
             "女"});
-            this.comsex.Location = new System.Drawing.Point(142, 313);
+            this.comsex.Location = new System.Drawing.Point(200, 315);
             this.comsex.Name = "comsex";
             this.comsex.Size = new System.Drawing.Size(124, 20);
             this.comsex.TabIndex = 9;
             // 
-            // button6
+            // btnreset
             // 
-            this.button6.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button6.Location = new System.Drawing.Point(605, 301);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(65, 46);
-            this.button6.TabIndex = 10;
-            this.button6.Text = "重置";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btnreset.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnreset.Location = new System.Drawing.Point(617, 358);
+            this.btnreset.Name = "btnreset";
+            this.btnreset.Size = new System.Drawing.Size(65, 32);
+            this.btnreset.TabIndex = 10;
+            this.btnreset.Text = "重置";
+            this.btnreset.UseVisualStyleBackColor = true;
+            this.btnreset.Click += new System.EventHandler(this.btnreset_Click);
             // 
-            // zyxx
+            // staff_info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::cygl.UI.Properties.Resources.主界面;
+            this.BackgroundImage = global::cygl.UI.Properties.Resources.背景白;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(712, 498);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btnreset);
             this.Controls.Add(this.comsex);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txttel);
@@ -344,18 +347,19 @@
             this.Controls.Add(this.txtage);
             this.Controls.Add(this.txtname);
             this.Controls.Add(this.txtid);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.phonenum);
+            this.Controls.Add(this.labelnum);
+            this.Controls.Add(this.labelage);
+            this.Controls.Add(this.lgender);
+            this.Controls.Add(this.labelname);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labeltitle);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "zyxx";
+            this.Name = "staff_info";
             this.Text = "职员信息";
+            this.Load += new System.EventHandler(this.staff_info_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -365,23 +369,23 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label labeltitle;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btndelete;
+        private System.Windows.Forms.Button btnquery;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnmodify;
+        private System.Windows.Forms.Button btnadd;
         private System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelname;
         private System.Windows.Forms.TextBox txtname;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lgender;
+        private System.Windows.Forms.Label labelage;
         private System.Windows.Forms.TextBox txtage;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelnum;
         private System.Windows.Forms.TextBox txtidcard;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label phonenum;
         private System.Windows.Forms.TextBox txttel;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
@@ -391,6 +395,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.ComboBox comsex;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnreset;
     }
 }

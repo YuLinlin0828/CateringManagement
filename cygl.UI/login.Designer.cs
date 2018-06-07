@@ -107,7 +107,7 @@
             this.btnlogin.TabIndex = 3;
             this.btnlogin.Text = "登录";
             this.btnlogin.UseVisualStyleBackColor = false;
-            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
+            this.btnlogin.Click += new System.EventHandler(this.Btnlogin_Click);
             // 
             // btnquit
             // 
@@ -122,7 +122,7 @@
             this.btnquit.TabIndex = 4;
             this.btnquit.Text = "退出";
             this.btnquit.UseVisualStyleBackColor = false;
-            this.btnquit.Click += new System.EventHandler(this.btnquit_Click);
+            this.btnquit.Click += new System.EventHandler(this.Btnquit_Click);
             // 
             // login
             // 
@@ -142,7 +142,7 @@
             this.MaximizeBox = false;
             this.Name = "login";
             this.Text = "餐饮管理系统";
-            this.Load += new System.EventHandler(this.login_Load);
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

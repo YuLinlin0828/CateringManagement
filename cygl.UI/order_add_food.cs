@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-// ÏÂÔØÓÚwww.mycodes.net
+
 namespace cygl.UI
 {
     public partial class order_add_food : Form

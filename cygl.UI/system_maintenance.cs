@@ -20,31 +20,31 @@ namespace cygl.UI
         public string bt;
         public string la;
         public string sUser;
-        private void xtwh_Load(object sender, EventArgs e)
+        private void sysmaintenance_Load(object sender, EventArgs e)
         {
-            button1.Text = bt;
-            label1.Text = la;
+            btnlogin.Text = bt;
+            labeltitle.Text = la;
                      
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnlogin_Click(object sender, EventArgs e)
         {
-            if (textBox2.Text == "")
+            if (txtusername.Text == "")
             {
                 MessageBox.Show("用户名不能为空");
             }
-            else if (textBox1.Text == "")
+            else if (txtuserpw.Text == "")
             {
                 MessageBox.Show("密码不能为空");
-                // 下载于www.mycodes.net
+
             }
-            else if (button1.Text == "注册")
+            else if (btnlogin.Text == "注册")
             {
                 SqlConnection conn = cygl.Helper.DBHelper.getconn();
                 conn.Open();
-                sUser = textBox2.Text.Trim();
-                string sPwd = textBox1.Text.Trim();
+                sUser = txtusername.Text.Trim();
+                string sPwd = txtuserpw.Text.Trim();
                 string str = "select name from users where name='" + sUser + "'";
                 SqlCommand comm = new SqlCommand(str, conn);
                 int i = Convert.ToInt32(comm.ExecuteScalar());
@@ -55,27 +55,27 @@ namespace cygl.UI
 
                 else 
                 {
-                    ur.name = textBox2.Text;
-                    ur.pwd = textBox1.Text;
+                    ur.name = txtusername.Text;
+                    ur.pwd = txtuserpw.Text;
                     us.insert(ur);
                     MessageBox.Show("注册成功");
                 }
             }
-            if (button1.Text == "修改")
+            if (btnlogin.Text == "修改")
             {
                
 
-                    ur.name = textBox2.Text;
-                    ur.pwd = textBox1.Text;
+                    ur.name = txtusername.Text;
+                    ur.pwd = txtuserpw.Text;
                     us.update(ur);
                     MessageBox.Show("修改成功");
                 
                 
             }
-            if (button1.Text == "注销")
+            if (btnlogin.Text == "注销")
             {
-                    ur.name = textBox2.Text;
-                    ur.pwd = textBox1.Text;
+                    ur.name = txtusername.Text;
+                    ur.pwd = txtuserpw.Text;
                     us.delete(ur);
                     MessageBox.Show("注销成功");
                 

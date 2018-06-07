@@ -103,6 +103,16 @@ namespace cygl.UI.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap 空桌 {
+            get {
+                object obj = ResourceManager.GetObject("空桌", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 背景 {
             get {
                 object obj = ResourceManager.GetObject("背景", resourceCulture);
@@ -133,6 +143,16 @@ namespace cygl.UI.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap 背景青 {
+            get {
+                object obj = ResourceManager.GetObject("背景青", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 蔬菜 {
             get {
                 object obj = ResourceManager.GetObject("蔬菜", resourceCulture);
@@ -146,6 +166,16 @@ namespace cygl.UI.Properties {
         internal static System.Drawing.Bitmap 餐具背景 {
             get {
                 object obj = ResourceManager.GetObject("餐具背景", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 餐馆进餐 {
+            get {
+                object obj = ResourceManager.GetObject("餐馆进餐", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

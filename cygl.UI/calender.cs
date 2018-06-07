@@ -14,5 +14,10 @@ namespace cygl.UI
         {
             InitializeComponent();
         }
+
+        private void calender_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

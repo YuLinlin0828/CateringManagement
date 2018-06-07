@@ -29,89 +29,92 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(system_maintenance));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.labeltitle = new System.Windows.Forms.Label();
+            this.labeluser = new System.Windows.Forms.Label();
+            this.labelpw = new System.Windows.Forms.Label();
+            this.btnlogin = new System.Windows.Forms.Button();
+            this.txtuserpw = new System.Windows.Forms.TextBox();
+            this.txtusername = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // label1
+            // labeltitle
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("楷体", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(138, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 33);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "lable";
+            this.labeltitle.BackColor = System.Drawing.Color.Transparent;
+            this.labeltitle.Font = new System.Drawing.Font("楷体", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labeltitle.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.labeltitle.Location = new System.Drawing.Point(144, 35);
+            this.labeltitle.Name = "labeltitle";
+            this.labeltitle.Size = new System.Drawing.Size(133, 33);
+            this.labeltitle.TabIndex = 4;
+            this.labeltitle.Text = "管理员";
+            this.labeltitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // labeluser
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(59, 98);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "用户名:";
+            this.labeluser.AutoSize = true;
+            this.labeluser.BackColor = System.Drawing.Color.Transparent;
+            this.labeluser.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labeluser.Location = new System.Drawing.Point(117, 102);
+            this.labeluser.Name = "labeluser";
+            this.labeluser.Size = new System.Drawing.Size(68, 16);
+            this.labeluser.TabIndex = 0;
+            this.labeluser.Text = "用户名:";
             // 
-            // label3
+            // labelpw
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(59, 176);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "密  码:";
+            this.labelpw.AutoSize = true;
+            this.labelpw.BackColor = System.Drawing.Color.Transparent;
+            this.labelpw.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelpw.Location = new System.Drawing.Point(117, 173);
+            this.labelpw.Name = "labelpw";
+            this.labelpw.Size = new System.Drawing.Size(69, 16);
+            this.labelpw.TabIndex = 0;
+            this.labelpw.Text = "密  码:";
             // 
-            // button1
+            // btnlogin
             // 
-            this.button1.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(143, 239);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 51);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnlogin.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnlogin.Location = new System.Drawing.Point(170, 265);
+            this.btnlogin.Name = "btnlogin";
+            this.btnlogin.Size = new System.Drawing.Size(80, 30);
+            this.btnlogin.TabIndex = 3;
+            this.btnlogin.Text = "登录";
+            this.btnlogin.UseVisualStyleBackColor = true;
+            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
-            // textBox1
+            // txtuserpw
             // 
-            this.textBox1.Location = new System.Drawing.Point(176, 175);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(153, 21);
-            this.textBox1.TabIndex = 2;
+            this.txtuserpw.Location = new System.Drawing.Point(183, 170);
+            this.txtuserpw.Name = "txtuserpw";
+            this.txtuserpw.PasswordChar = '*';
+            this.txtuserpw.Size = new System.Drawing.Size(130, 21);
+            this.txtuserpw.TabIndex = 2;
             // 
-            // textBox2
+            // txtusername
             // 
-            this.textBox2.Location = new System.Drawing.Point(176, 96);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(153, 21);
-            this.textBox2.TabIndex = 1;
+            this.txtusername.Location = new System.Drawing.Point(183, 100);
+            this.txtusername.Name = "txtusername";
+            this.txtusername.Size = new System.Drawing.Size(130, 21);
+            this.txtusername.TabIndex = 1;
             // 
-            // xtwh
+            // system_maintenance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::cygl.UI.Properties.Resources.主界面;
+            this.BackgroundImage = global::cygl.UI.Properties.Resources.背景青;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(407, 330);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtusername);
+            this.Controls.Add(this.txtuserpw);
+            this.Controls.Add(this.btnlogin);
+            this.Controls.Add(this.labelpw);
+            this.Controls.Add(this.labeluser);
+            this.Controls.Add(this.labeltitle);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "xtwh";
+            this.Name = "system_maintenance";
             this.Text = "系统维护";
-            this.Load += new System.EventHandler(this.xtwh_Load);
+            this.Load += new System.EventHandler(this.sysmaintenance_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,11 +122,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label labeltitle;
+        private System.Windows.Forms.Label labeluser;
+        private System.Windows.Forms.Label labelpw;
+        private System.Windows.Forms.Button btnlogin;
+        private System.Windows.Forms.TextBox txtuserpw;
+        private System.Windows.Forms.TextBox txtusername;
     }
 }

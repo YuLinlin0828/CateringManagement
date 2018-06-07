@@ -20,25 +20,25 @@ namespace cygl.UI
         public string Names;
         Model.user us = new cygl.Model.user();
         //桌台信息
-        private void table_infoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Table_infoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             table_info fm = new table_info();
             fm.Show();
         }
         //职员信息
-        private void staff_infoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Staff_infoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             staff_info fm = new staff_info();
             fm.Show();
         }
         //菜品信息
-        private void food_infoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Food_infoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             food_info fm = new food_info();
             fm.Show();
         }
         //注册管理员
-        private void admin_register_Click(object sender, EventArgs e)
+        private void Admin_register_Click(object sender, EventArgs e)
         {
             system_maintenance fm = new system_maintenance();
             fm.bt = "注册";
@@ -46,7 +46,7 @@ namespace cygl.UI
             fm.Show();
         }
         //修改管理员
-        private void admin_change_Click(object sender, EventArgs e)
+        private void Admin_change_Click(object sender, EventArgs e)
         {
             system_maintenance fm = new system_maintenance();
             fm.bt = "修改";
@@ -54,15 +54,15 @@ namespace cygl.UI
             fm.Show();
         }
         //注销管理员
-        private void admin_cancel_Click(object sender, EventArgs e)
+        private void Admin_cancel_Click(object sender, EventArgs e)
         {
             system_maintenance fm = new system_maintenance();
             fm.bt = "注销";
             fm.la = "注销";
             fm.Show();
         }
-
-        private void exit_tool_Click(object sender, EventArgs e)
+        //退出系统
+        private void Exit_tool_Click(object sender, EventArgs e)
         {
 
             if (MessageBox.Show("确定退出本系统吗？", "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == DialogResult.OK)
@@ -70,9 +70,10 @@ namespace cygl.UI
                 Application.Exit();
             }
         }
-        private void AddItems(string rzt)
+        //添加项目
+        private void AddItems(string rstatus)
         {
-            if (rzt == "使用")
+            if (rstatus == "使用")
             {
                 lvDesk.Items.Add(sdr["roomname"].ToString(), 1);
             }
@@ -81,8 +82,8 @@ namespace cygl.UI
                 lvDesk.Items.Add(sdr["roomName"].ToString(), 0);
             }
         }
-
-        private void zjm_Activated(object sender, EventArgs e)
+        //主界面
+        private void Mainscreen_Activated(object sender, EventArgs e)
         {
             lvDesk.Items.Clear();
             SqlConnection conn = cygl.Helper.DBHelper.getconn();
@@ -91,19 +92,19 @@ namespace cygl.UI
             sdr = cmd.ExecuteReader();
             while (sdr.Read())
             {
-                string zt = sdr["roomstate"].ToString().Trim();
-                AddItems(zt);
+                string status = sdr["roomstate"].ToString().Trim();
+                AddItems(status);
             }
             conn.Close();
         }
-
-        private void open_table_Click(object sender, EventArgs e)
+        //开桌台
+        private void Open_table_Click(object sender, EventArgs e)
         {
             if (lvDesk.SelectedItems.Count != 0)
             {
 
                 string names = lvDesk.SelectedItems[0].SubItems[0].Text;
-                kt openroom = new kt();
+                start_table openroom = new start_table();
                 openroom.name = names;
                 openroom.ShowDialog();
             }
@@ -112,8 +113,8 @@ namespace cygl.UI
                 MessageBox.Show("请选择桌台");
             }
         }
-
-        private void cancel_table_Click(object sender, EventArgs e)
+        //取消桌台
+        private void Cancel_table_Click(object sender, EventArgs e)
         {
             if (lvDesk.SelectedItems.Count != 0)
             {
@@ -134,7 +135,7 @@ namespace cygl.UI
                     cmd = new SqlCommand("delete from guestfood where roomname='" + names + "'", conn);
                     cmd.ExecuteNonQuery();
                     conn.Close();
-                    zjm_Activated(sender, e);
+                    Mainscreen_Activated(sender, e);
                 }
             }
             else
@@ -143,8 +144,8 @@ namespace cygl.UI
 
             }
         }
-
-        private void add_food_Click(object sender, EventArgs e)
+        //点/加菜
+        private void Add_food_Click(object sender, EventArgs e)
         {
             if (lvDesk.SelectedItems.Count != 0)
             {
@@ -159,7 +160,7 @@ namespace cygl.UI
             }
         }
 
-        private void lvDesk_Click(object sender, EventArgs e)
+        private void LvDesk_Click(object sender, EventArgs e)
         {
             string names = lvDesk.SelectedItems[0].SubItems[0].Text;
             SqlConnection conn = cygl.Helper.DBHelper.getconn();
@@ -167,9 +168,9 @@ namespace cygl.UI
             SqlCommand cmd = new SqlCommand("select * from room where roomname='" + names + "'", conn);
             SqlDataReader sdr = cmd.ExecuteReader();
             sdr.Read();
-            string zt = sdr["roomstate"].ToString().Trim();
+            string status = sdr["roomstate"].ToString().Trim();
             sdr.Close();
-            if (zt == "使用")
+            if (status == "使用")
             {
                 this.rightclick_menu.Items[0].Enabled = false;
                 this.rightclick_menu.Items[1].Enabled = true;
@@ -177,7 +178,7 @@ namespace cygl.UI
                 this.rightclick_menu.Items[5].Enabled = true;
                 this.rightclick_menu.Items[6].Enabled = true;
             }
-            if (zt == "待用")
+            if (status == "待用")
             {
                 this.rightclick_menu.Items[0].Enabled = true;
                 this.rightclick_menu.Items[1].Enabled = false;
@@ -188,7 +189,7 @@ namespace cygl.UI
             conn.Close();
         }
 
-        private void pay_bill_Click(object sender, EventArgs e)
+        private void Pay_bill_Click(object sender, EventArgs e)
         {
             if (lvDesk.SelectedItems.Count != 0)
             {
@@ -203,7 +204,7 @@ namespace cygl.UI
             }
         }
 
-        private void check_bill_Click(object sender, EventArgs e)
+        private void Check_bill_Click(object sender, EventArgs e)
         {
             if (lvDesk.SelectedItems.Count != 0)
             {
@@ -218,83 +219,82 @@ namespace cygl.UI
             }
         }
 
-        private void bill_record_Click(object sender, EventArgs e)
+        private void Bill_record_Click(object sender, EventArgs e)
         {
             bill_history fm = new bill_history();
             fm.Show();
         }
 
-        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        private void NotifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             this.Show();
         }
 
-        private void open_tool_Click(object sender, EventArgs e)
+        private void Open_tool_Click(object sender, EventArgs e)
         {
             this.Show();
 
         }
 
-        private void exit_tool1_Click(object sender, EventArgs e)
+        private void Exit_tool1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void zjm_FormClosed(object sender, FormClosedEventArgs e)
+        private void Mainscreen_FormClosed(object sender, FormClosedEventArgs e)
         {
             
         }
 
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        private void ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             this.Hide();
         }
 
-        private void zjm_FormClosing(object sender, FormClosingEventArgs e)
+        private void Mainscreen_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Hide();
         }
 
-        private void about_info_Click(object sender, EventArgs e)
+        private void About_info_Click(object sender, EventArgs e)
         {
             designer_info fm = new designer_info();
             fm.Show();
         }
 
-        private void calendar_tool_Click(object sender, EventArgs e)
+        private void Calendar_tool_Click(object sender, EventArgs e)
         {
             calender fm = new calender();
             fm.Show();
         }
 
-        private void calculator_tool_Click(object sender, EventArgs e)
+        private void Calculator_tool_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("calc.exe");
         }
 
-        private void notepad_tool_Click(object sender, EventArgs e)
+        private void Notepad_tool_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("notepad.exe");
         }
 
-        private void zjm_Load(object sender, EventArgs e)
+        private void Mainscreen_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void main_menu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void Main_menu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }
 
-        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        private void ContextMenuStrip1_Opening(object sender, CancelEventArgs e)
         {
 
         }
 
-        private void lvDesk_SelectedIndexChanged(object sender, EventArgs e)
+        private void LvDesk_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(food_info));
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelt = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -37,37 +37,38 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtid = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label_id = new System.Windows.Forms.Label();
+            this.label_foodkind = new System.Windows.Forms.Label();
+            this.label_foodname = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label_price = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnexit = new System.Windows.Forms.Button();
+            this.btnmodify = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btndelete = new System.Windows.Forms.Button();
+            this.btnquery = new System.Windows.Forms.Button();
+            this.btnadd = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnreset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // labelt
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("楷体", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(248, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 35);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "菜品信息表";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.labelt.AutoSize = true;
+            this.labelt.BackColor = System.Drawing.Color.Transparent;
+            this.labelt.Font = new System.Drawing.Font("楷体", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelt.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.labelt.Location = new System.Drawing.Point(248, 9);
+            this.labelt.Name = "labelt";
+            this.labelt.Size = new System.Drawing.Size(200, 35);
+            this.labelt.TabIndex = 4;
+            this.labelt.Text = "菜品信息表";
+            this.labelt.Click += new System.EventHandler(this.labelt_Click);
             // 
             // dataGridView1
             // 
@@ -82,14 +83,14 @@
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView1.Location = new System.Drawing.Point(50, 60);
+            this.dataGridView1.Location = new System.Drawing.Point(103, 47);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.ShowEditingIcon = false;
-            this.dataGridView1.Size = new System.Drawing.Size(615, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(503, 150);
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -130,152 +131,167 @@
             // 
             // txtid
             // 
-            this.txtid.Location = new System.Drawing.Point(114, 232);
+            this.txtid.Location = new System.Drawing.Point(103, 280);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(124, 21);
             this.txtid.TabIndex = 0;
             // 
-            // label2
+            // label_id
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(46, 228);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 20);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "ID:";
+            this.label_id.AutoSize = true;
+            this.label_id.BackColor = System.Drawing.Color.Transparent;
+            this.label_id.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label_id.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label_id.Location = new System.Drawing.Point(55, 280);
+            this.label_id.Name = "label_id";
+            this.label_id.Size = new System.Drawing.Size(42, 20);
+            this.label_id.TabIndex = 9;
+            this.label_id.Text = "ID:";
             // 
-            // label3
+            // label_foodkind
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(12, 288);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 20);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "菜品类型:";
+            this.label_foodkind.AutoSize = true;
+            this.label_foodkind.BackColor = System.Drawing.Color.Transparent;
+            this.label_foodkind.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label_foodkind.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label_foodkind.Location = new System.Drawing.Point(4, 335);
+            this.label_foodkind.Name = "label_foodkind";
+            this.label_foodkind.Size = new System.Drawing.Size(104, 20);
+            this.label_foodkind.TabIndex = 9;
+            this.label_foodkind.Text = "菜品类型:";
             // 
-            // label4
+            // label_foodname
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(244, 229);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 20);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "菜品名称:";
+            this.label_foodname.AutoSize = true;
+            this.label_foodname.BackColor = System.Drawing.Color.Transparent;
+            this.label_foodname.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label_foodname.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label_foodname.Location = new System.Drawing.Point(239, 280);
+            this.label_foodname.Name = "label_foodname";
+            this.label_foodname.Size = new System.Drawing.Size(104, 20);
+            this.label_foodname.TabIndex = 9;
+            this.label_foodname.Text = "菜品名称:";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(349, 288);
+            this.textBox2.Location = new System.Drawing.Point(338, 335);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(124, 21);
             this.textBox2.TabIndex = 1;
             // 
-            // label5
+            // label_price
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(485, 228);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(99, 20);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "菜品价格:";
+            this.label_price.AutoSize = true;
+            this.label_price.BackColor = System.Drawing.Color.Transparent;
+            this.label_price.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label_price.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label_price.Location = new System.Drawing.Point(468, 335);
+            this.label_price.Name = "label_price";
+            this.label_price.Size = new System.Drawing.Size(104, 20);
+            this.label_price.TabIndex = 9;
+            this.label_price.Text = "菜品价格:";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(590, 228);
+            this.textBox3.Location = new System.Drawing.Point(573, 335);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(99, 21);
             this.textBox3.TabIndex = 4;
             // 
-            // button5
+            // btnexit
             // 
-            this.button5.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button5.Location = new System.Drawing.Point(552, 20);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(95, 37);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "退出";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnexit.BackColor = System.Drawing.Color.White;
+            this.btnexit.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnexit.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnexit.Location = new System.Drawing.Point(552, 20);
+            this.btnexit.Name = "btnexit";
+            this.btnexit.Size = new System.Drawing.Size(95, 37);
+            this.btnexit.TabIndex = 9;
+            this.btnexit.Text = "退出";
+            this.btnexit.UseVisualStyleBackColor = false;
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
             // 
-            // button2
+            // btnmodify
             // 
-            this.button2.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(285, 20);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 37);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "修改";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnmodify.BackColor = System.Drawing.Color.White;
+            this.btnmodify.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnmodify.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnmodify.Location = new System.Drawing.Point(285, 20);
+            this.btnmodify.Name = "btnmodify";
+            this.btnmodify.Size = new System.Drawing.Size(95, 37);
+            this.btnmodify.TabIndex = 7;
+            this.btnmodify.Text = "修改";
+            this.btnmodify.UseVisualStyleBackColor = false;
+            this.btnmodify.Click += new System.EventHandler(this.btnmodify_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnexit);
+            this.groupBox1.Controls.Add(this.btndelete);
+            this.groupBox1.Controls.Add(this.btnquery);
+            this.groupBox1.Controls.Add(this.btnmodify);
+            this.groupBox1.Controls.Add(this.btnadd);
             this.groupBox1.Location = new System.Drawing.Point(21, 361);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(668, 72);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             // 
-            // button4
+            // btndelete
             // 
-            this.button4.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.Location = new System.Drawing.Point(421, 20);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(95, 37);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "删除";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btndelete.BackColor = System.Drawing.Color.White;
+            this.btndelete.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btndelete.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btndelete.Location = new System.Drawing.Point(421, 20);
+            this.btndelete.Name = "btndelete";
+            this.btndelete.Size = new System.Drawing.Size(95, 37);
+            this.btndelete.TabIndex = 8;
+            this.btndelete.Text = "删除";
+            this.btndelete.UseVisualStyleBackColor = false;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
-            // button3
+            // btnquery
             // 
-            this.button3.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.Location = new System.Drawing.Point(17, 20);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(95, 37);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "查询";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnquery.BackColor = System.Drawing.Color.White;
+            this.btnquery.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnquery.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnquery.Location = new System.Drawing.Point(17, 20);
+            this.btnquery.Name = "btnquery";
+            this.btnquery.Size = new System.Drawing.Size(95, 37);
+            this.btnquery.TabIndex = 5;
+            this.btnquery.Text = "查询";
+            this.btnquery.UseVisualStyleBackColor = false;
+            this.btnquery.Click += new System.EventHandler(this.btnquery_Click);
             // 
-            // button1
+            // btnadd
             // 
-            this.button1.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(145, 20);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 37);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "添加";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnadd.BackColor = System.Drawing.Color.White;
+            this.btnadd.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnadd.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnadd.Location = new System.Drawing.Point(145, 20);
+            this.btnadd.Name = "btnadd";
+            this.btnadd.Size = new System.Drawing.Size(95, 37);
+            this.btnadd.TabIndex = 6;
+            this.btnadd.Text = "添加";
+            this.btnadd.UseVisualStyleBackColor = false;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(244, 288);
+            this.label6.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label6.Location = new System.Drawing.Point(239, 335);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 20);
+            this.label6.Size = new System.Drawing.Size(104, 20);
             this.label6.TabIndex = 9;
             this.label6.Text = "菜品数量:";
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(349, 229);
+            this.textBox4.Location = new System.Drawing.Point(338, 280);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(124, 21);
             this.textBox4.TabIndex = 3;
@@ -291,47 +307,50 @@
             "酒类",
             "香烟",
             "饮料"});
-            this.comboBox1.Location = new System.Drawing.Point(117, 287);
+            this.comboBox1.Location = new System.Drawing.Point(103, 335);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 20);
             this.comboBox1.TabIndex = 2;
             // 
-            // button6
+            // btnreset
             // 
-            this.button6.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button6.Location = new System.Drawing.Point(549, 280);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(92, 37);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "重置";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btnreset.BackColor = System.Drawing.Color.White;
+            this.btnreset.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnreset.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnreset.Location = new System.Drawing.Point(573, 272);
+            this.btnreset.Name = "btnreset";
+            this.btnreset.Size = new System.Drawing.Size(92, 37);
+            this.btnreset.TabIndex = 11;
+            this.btnreset.Text = "重置";
+            this.btnreset.UseVisualStyleBackColor = false;
+            this.btnreset.Click += new System.EventHandler(this.btnreset_Click);
             // 
             // food_info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::cygl.UI.Properties.Resources.餐具背景;
+            this.BackgroundImage = global::cygl.UI.Properties.Resources.背景青;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(701, 445);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btnreset);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label_price);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label_foodname);
+            this.Controls.Add(this.label_foodkind);
             this.Controls.Add(this.txtid);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label_id);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelt);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "food_info";
             this.Text = "菜品信息";
+            this.Load += new System.EventHandler(this.food_info_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -341,21 +360,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelt;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtid;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label_id;
+        private System.Windows.Forms.Label label_foodkind;
+        private System.Windows.Forms.Label label_foodname;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label_price;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnexit;
+        private System.Windows.Forms.Button btnmodify;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btndelete;
+        private System.Windows.Forms.Button btnquery;
+        private System.Windows.Forms.Button btnadd;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.ComboBox comboBox1;
@@ -364,6 +383,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnreset;
     }
 }

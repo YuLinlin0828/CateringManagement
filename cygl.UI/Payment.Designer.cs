@@ -38,14 +38,14 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnExit = new System.Windows.Forms.Button();
-            this.btnJZ = new System.Windows.Forms.Button();
+            this.btnpay = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lbl0 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.rest0 = new System.Windows.Forms.Label();
+            this.changecoin = new System.Windows.Forms.Label();
             this.txtmoney = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblprice = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.cashier = new System.Windows.Forms.Label();
+            this.tprice = new System.Windows.Forms.Label();
+            this.labelsum = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRecord)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -55,7 +55,7 @@
             // dgvRecord
             // 
             this.dgvRecord.AllowUserToAddRows = false;
-            this.dgvRecord.BackgroundColor = System.Drawing.Color.White;
+            this.dgvRecord.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dgvRecord.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRecord.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -65,14 +65,15 @@
             this.Column5,
             this.Column6,
             this.Column7});
-            this.dgvRecord.Location = new System.Drawing.Point(6, 20);
+            this.dgvRecord.Location = new System.Drawing.Point(28, 43);
             this.dgvRecord.Name = "dgvRecord";
             this.dgvRecord.ReadOnly = true;
             this.dgvRecord.RowHeadersVisible = false;
             this.dgvRecord.RowTemplate.Height = 23;
             this.dgvRecord.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvRecord.Size = new System.Drawing.Size(281, 200);
+            this.dgvRecord.Size = new System.Drawing.Size(281, 209);
             this.dgvRecord.TabIndex = 2;
+            this.dgvRecord.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRecord_CellContentClick);
             // 
             // Column1
             // 
@@ -125,7 +126,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(97, 186);
+            this.btnExit.Location = new System.Drawing.Point(92, 186);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 7;
@@ -133,51 +134,52 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // btnJZ
+            // btnpay
             // 
-            this.btnJZ.Location = new System.Drawing.Point(16, 186);
-            this.btnJZ.Name = "btnJZ";
-            this.btnJZ.Size = new System.Drawing.Size(75, 23);
-            this.btnJZ.TabIndex = 6;
-            this.btnJZ.Text = "结账";
-            this.btnJZ.UseVisualStyleBackColor = true;
-            this.btnJZ.Click += new System.EventHandler(this.btnJZ_Click);
+            this.btnpay.Location = new System.Drawing.Point(6, 186);
+            this.btnpay.Name = "btnpay";
+            this.btnpay.Size = new System.Drawing.Size(75, 23);
+            this.btnpay.TabIndex = 6;
+            this.btnpay.Text = "结账";
+            this.btnpay.UseVisualStyleBackColor = true;
+            this.btnpay.Click += new System.EventHandler(this.btnpay_Click);
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.btnExit);
-            this.groupBox2.Controls.Add(this.btnJZ);
-            this.groupBox2.Controls.Add(this.lbl0);
-            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.btnpay);
+            this.groupBox2.Controls.Add(this.rest0);
+            this.groupBox2.Controls.Add(this.changecoin);
             this.groupBox2.Controls.Add(this.txtmoney);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.lblprice);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(318, 50);
+            this.groupBox2.Controls.Add(this.cashier);
+            this.groupBox2.Controls.Add(this.tprice);
+            this.groupBox2.Controls.Add(this.labelsum);
+            this.groupBox2.Location = new System.Drawing.Point(328, 69);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 232);
+            this.groupBox2.Size = new System.Drawing.Size(212, 232);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             // 
-            // lbl0
+            // rest0
             // 
-            this.lbl0.AutoSize = true;
-            this.lbl0.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbl0.Location = new System.Drawing.Point(67, 102);
-            this.lbl0.Name = "lbl0";
-            this.lbl0.Size = new System.Drawing.Size(20, 20);
-            this.lbl0.TabIndex = 5;
-            this.lbl0.Text = "0";
+            this.rest0.AutoSize = true;
+            this.rest0.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.rest0.Location = new System.Drawing.Point(67, 102);
+            this.rest0.Name = "rest0";
+            this.rest0.Size = new System.Drawing.Size(20, 20);
+            this.rest0.TabIndex = 5;
+            this.rest0.Text = "0";
             // 
-            // label4
+            // changecoin
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 107);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 12);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "找零：";
+            this.changecoin.AutoSize = true;
+            this.changecoin.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.changecoin.Location = new System.Drawing.Point(18, 102);
+            this.changecoin.Name = "changecoin";
+            this.changecoin.Size = new System.Drawing.Size(49, 14);
+            this.changecoin.TabIndex = 4;
+            this.changecoin.Text = "找零：";
             // 
             // txtmoney
             // 
@@ -188,32 +190,33 @@
             this.txtmoney.TextChanged += new System.EventHandler(this.txtmoney_TextChanged);
             this.txtmoney.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtmoney_KeyPress);
             // 
-            // label3
+            // cashier
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 68);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 12);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "收银：";
+            this.cashier.AutoSize = true;
+            this.cashier.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cashier.Location = new System.Drawing.Point(18, 63);
+            this.cashier.Name = "cashier";
+            this.cashier.Size = new System.Drawing.Size(49, 14);
+            this.cashier.TabIndex = 2;
+            this.cashier.Text = "收银：";
             // 
-            // lblprice
+            // tprice
             // 
-            this.lblprice.AutoSize = true;
-            this.lblprice.Location = new System.Drawing.Point(65, 36);
-            this.lblprice.Name = "lblprice";
-            this.lblprice.Size = new System.Drawing.Size(0, 12);
-            this.lblprice.TabIndex = 1;
+            this.tprice.AutoSize = true;
+            this.tprice.Location = new System.Drawing.Point(65, 36);
+            this.tprice.Name = "tprice";
+            this.tprice.Size = new System.Drawing.Size(0, 12);
+            this.tprice.TabIndex = 1;
             // 
-            // label1
+            // labelsum
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(14, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "总金额：";
+            this.labelsum.AutoSize = true;
+            this.labelsum.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelsum.Location = new System.Drawing.Point(-1, 25);
+            this.labelsum.Name = "labelsum";
+            this.labelsum.Size = new System.Drawing.Size(89, 19);
+            this.labelsum.TabIndex = 0;
+            this.labelsum.Text = "总金额：";
             // 
             // groupBox1
             // 
@@ -225,18 +228,18 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             // 
-            // jz
+            // Payment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::cygl.UI.Properties.Resources.登陆背景;
+            this.BackgroundImage = global::cygl.UI.Properties.Resources.背景青;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(543, 328);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "jz";
+            this.Name = "Payment";
             this.Text = "结账";
             this.Load += new System.EventHandler(this.jz_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRecord)).EndInit();
@@ -258,14 +261,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button btnJZ;
+        private System.Windows.Forms.Button btnpay;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label lbl0;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label rest0;
+        private System.Windows.Forms.Label changecoin;
         private System.Windows.Forms.TextBox txtmoney;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lblprice;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label cashier;
+        private System.Windows.Forms.Label tprice;
+        private System.Windows.Forms.Label labelsum;
         private System.Windows.Forms.GroupBox groupBox1;
     }
 }

@@ -16,12 +16,13 @@ namespace cygl.UI
         }
         BLL.waiter br = new cygl.BLL.waiter();
         Model.waiter mr = new cygl.Model.waiter();
-        private void button3_Click(object sender, EventArgs e)
+
+        private void btnquery_Click(object sender, EventArgs e)
         {
             dataGridView1.DataSource = br.getlist("");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnadd_Click(object sender, EventArgs e)
         {
             if (txtid.Text == "")
             {
@@ -41,7 +42,7 @@ namespace cygl.UI
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnmodify_Click(object sender, EventArgs e)
         {
             if (txtid.Text == "")
             {
@@ -72,7 +73,7 @@ namespace cygl.UI
             txttel.Text = dataGridView1.SelectedCells[5].Value.ToString();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btndelete_Click(object sender, EventArgs e)
         {
             if (txtid.Text == "")
             {
@@ -85,12 +86,12 @@ namespace cygl.UI
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void btnreset_Click(object sender, EventArgs e)
         {
             txtid.Text = "";
             txtname.Text = "";
@@ -98,6 +99,16 @@ namespace cygl.UI
             txtage.Text = "";
             txtidcard.Text = "";
             txttel.Text = "";
+        }
+
+        private void staff_info_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lgender_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

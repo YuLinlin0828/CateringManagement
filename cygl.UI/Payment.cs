@@ -33,8 +33,8 @@ namespace cygl.UI
             price = Convert.ToString(cmd.ExecuteScalar());
             if (price == "")
             {
-                lblprice.Text = "0";
-                btnJZ.Enabled = false;
+                tprice.Text = "0";
+                btnpay.Enabled = false;
             }
             else
             {
@@ -42,13 +42,13 @@ namespace cygl.UI
                 bjf = cmd.ExecuteScalar().ToString();
                 if (bjf == "0")
                 {
-                    btnJZ.Enabled = true;
-                    lblprice.Text = (Convert.ToDecimal(Convert.ToDouble(price))).ToString("C");
+                    btnpay.Enabled = true;
+                    tprice.Text = (Convert.ToDecimal(Convert.ToDouble(price))).ToString("C");
                 }
                 else
                 {
-                    btnJZ.Enabled = true;
-                    lblprice.Text = (Convert.ToDecimal(Convert.ToDouble(price))).ToString("C");
+                    btnpay.Enabled = true;
+                    tprice.Text = (Convert.ToDecimal(Convert.ToDouble(price))).ToString("C");
                 }
                 conn.Close();
             }
@@ -68,32 +68,32 @@ namespace cygl.UI
         {
             if (price == "")
             {
-                lbl0.Text = "0";
+                rest0.Text = "0";
             }
             else
             {
                 if (txtmoney.Text == "")
                 {
                     txtmoney.Text = "0";
-                    lbl0.Text = "0";
+                    rest0.Text = "0";
                 }
                 else
                 {
-                    lbl0.Text = Convert.ToDecimal(Convert.ToDouble(txtmoney.Text.Trim()) - Convert.ToDouble(price)).ToString("C");
+                    rest0.Text = Convert.ToDecimal(Convert.ToDouble(txtmoney.Text.Trim()) - Convert.ToDouble(price)).ToString("C");
                 }
             }
         }
 
-        private void btnJZ_Click(object sender, EventArgs e)
+        private void btnpay_Click(object sender, EventArgs e)
         {
-            if (txtmoney.Text == "" || lbl0.Text == "0")
+            if (txtmoney.Text == "" || rest0.Text == "0")
             {
                 MessageBox.Show("请先结账");
                 return;
             }
             else
             {
-                if (lbl0.Text.Substring(1, 1) == "-")
+                if (rest0.Text.Substring(1, 1) == "-")
                 {
                     MessageBox.Show("金额不足");
                     return;
@@ -122,5 +122,9 @@ namespace cygl.UI
             this.Close();
         }
 
+        private void dgvRecord_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
