@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>cygl.UI</RootNamespace>
-    <AssemblyName>cygl.UI</AssemblyName>
+    <AssemblyName>CM</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -50,6 +50,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>程序图标.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -275,6 +278,7 @@
     <None Include="Resources\空桌.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="程序图标.ico" />
     <None Include="Resources\背景青.jpg" />
     <Content Include="Resources\餐具背景.jpg" />
     <None Include="Resources\餐具背景1.jpg" />
