@@ -19,59 +19,59 @@ namespace cygl.UI
 
         private void djc_Load(object sender, EventArgs e)
         {
-            this.Text = RName + "点/加菜";
-            TreeNode newnode1 = tvFood.Nodes.Add("新菜");
-            TreeNode newnode2 = tvFood.Nodes.Add("小炒");
-            TreeNode newnode3 = tvFood.Nodes.Add("火锅和汤类");
-            TreeNode newnode4 = tvFood.Nodes.Add("主食");
-            TreeNode newnode5 = tvFood.Nodes.Add("酒类");
-            TreeNode newnode6 = tvFood.Nodes.Add("香烟");
-            TreeNode newnode7 = tvFood.Nodes.Add("饮料");
+            this.Text = RName + "点/加食物";
+            TreeNode newnode1 = tvFood.Nodes.Add("BLACK");
+            TreeNode newnode2 = tvFood.Nodes.Add("WHITE");
+            TreeNode newnode3 = tvFood.Nodes.Add("FILTER");
+            TreeNode newnode4 = tvFood.Nodes.Add("OTHER");
+            TreeNode newnode5 = tvFood.Nodes.Add("BREAD");
+            TreeNode newnode6 = tvFood.Nodes.Add("CAKE");
+            TreeNode newnode7 = tvFood.Nodes.Add("SALAD");
             SqlConnection conn = cygl.Helper.DBHelper.getconn();
             conn.Open();
-            SqlCommand cmd = new SqlCommand("select * from food where foodtype='新菜'", conn);
+            SqlCommand cmd = new SqlCommand("select * from food where foodtype='BLACK'", conn);
             SqlDataReader sdr = cmd.ExecuteReader();
             while (sdr.Read())
             {
                 newnode1.Nodes.Add(sdr[3].ToString().Trim());
             }
             sdr.Close();
-            cmd = new SqlCommand("select * from food where foodtype='小炒'", conn);
+            cmd = new SqlCommand("select * from food where foodtype='WHITE'", conn);
             sdr = cmd.ExecuteReader();
             while (sdr.Read())
             {
                 newnode2.Nodes.Add(sdr[3].ToString().Trim());
             }
             sdr.Close();
-            cmd = new SqlCommand("select * from food where foodtype='火锅和汤类'", conn);
+            cmd = new SqlCommand("select * from food where foodtype='FILTER'", conn);
             sdr = cmd.ExecuteReader();
             while (sdr.Read())
             {
                 newnode3.Nodes.Add(sdr[3].ToString().Trim());
             }
             sdr.Close();
-            cmd = new SqlCommand("select * from food where foodtype='主食'", conn);
+            cmd = new SqlCommand("select * from food where foodtype='OTHER'", conn);
             sdr = cmd.ExecuteReader();
             while (sdr.Read())
             {
                 newnode4.Nodes.Add(sdr[3].ToString().Trim());
             }
             sdr.Close();
-            cmd = new SqlCommand("select * from food where foodtype='酒类'", conn);
+            cmd = new SqlCommand("select * from food where foodtype='BREAD'", conn);
             sdr = cmd.ExecuteReader();
             while (sdr.Read())
             {
                 newnode5.Nodes.Add(sdr[3].ToString().Trim());
             }
             sdr.Close();
-            cmd = new SqlCommand("select * from food where foodtype='香烟'", conn);
+            cmd = new SqlCommand("select * from food where foodtype='CAKE'", conn);
             sdr = cmd.ExecuteReader();
             while (sdr.Read())
             {
                 newnode6.Nodes.Add(sdr[3].ToString().Trim());
             }
             sdr.Close();
-            cmd = new SqlCommand("select * from food where foodtype='饮料'", conn);
+            cmd = new SqlCommand("select * from food where foodtype='SALAD'", conn);
             sdr = cmd.ExecuteReader();
             while (sdr.Read())
             {
@@ -112,7 +112,7 @@ namespace cygl.UI
         private void tvFood_DoubleClick(object sender, EventArgs e)
         {
             string foodname = tvFood.SelectedNode.Text;
-            if (foodname == "新菜" || foodname == "小炒" || foodname == "凉菜和火锅类" || foodname == "主食" || foodname == "酒类" || foodname == "香烟" || foodname == "饮料")
+            if (foodname == "BLACK" || foodname == "WHITE" || foodname == "FILTER" || foodname == "OTHER" || foodname == "BREAD" || foodname == "CAKE" || foodname == "SALAD")
             {
 
             }
