@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cygl.Helper", "cygl.Helper\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cygl.UI", "cygl.UI\cygl.UI.csproj", "{CD9DFC74-0034-4881-A3BD-8A8E92285913}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CateringManager", "CateringManager\CateringManager.vdproj", "{9C162431-AC51-4910-85FC-DD0287ACCD8B}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CateringManager", "CateringManager\CateringManager.vdproj", "{9242AAA7-258B-4A14-A14D-69B63D080C34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,8 +41,8 @@ Global
 		{CD9DFC74-0034-4881-A3BD-8A8E92285913}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD9DFC74-0034-4881-A3BD-8A8E92285913}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD9DFC74-0034-4881-A3BD-8A8E92285913}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9C162431-AC51-4910-85FC-DD0287ACCD8B}.Debug|Any CPU.ActiveCfg = Debug
-		{9C162431-AC51-4910-85FC-DD0287ACCD8B}.Release|Any CPU.ActiveCfg = Release
+		{9242AAA7-258B-4A14-A14D-69B63D080C34}.Debug|Any CPU.ActiveCfg = Debug
+		{9242AAA7-258B-4A14-A14D-69B63D080C34}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
