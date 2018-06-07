@@ -126,7 +126,8 @@
             this.class4.Name = "class4";
             this.class4.Size = new System.Drawing.Size(97, 20);
             this.class4.TabIndex = 0;
-            this.class4.Text = "F1503001";
+            this.class4.Text = "F1503007";
+            this.class4.Click += new System.EventHandler(this.class4_Click);
             // 
             // name1
             // 

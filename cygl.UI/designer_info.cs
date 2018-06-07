@@ -19,5 +19,10 @@ namespace cygl.UI
         {
 
         }
+
+        private void class4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
